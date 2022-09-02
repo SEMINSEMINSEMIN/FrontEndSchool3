@@ -1,23 +1,29 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
     font-size: 10px;
     background-image: url(images/bg.png);
+    padding: 100px 0;
+    min-height: 100vh;
 }
 
-div {
-    width: 200px;
-    height: 200px;
-    background-color: red;
+.hide-element {
+    border: 0;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip; rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: -100px;
-    margin-left: -100px;
+    width: 1px; 
+} 
 
+div.animalinfo {
+    width: 200px;
+    background-color: rgb(147, 87, 49);
+    margin: auto;
 }
-

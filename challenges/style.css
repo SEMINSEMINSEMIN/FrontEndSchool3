@@ -1,13 +1,16 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    font-size: 10px;
     background-image: url(images/bg.png);
-    padding: 100px 0;
+    color: white;
     min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
 .hide-element {
@@ -22,8 +25,8 @@ body {
     width: 1px; 
 } 
 
-div.animalinfo {
-    width: 200px;
-    background-color: rgb(147, 87, 49);
-    margin: auto;
+.wrapper {
+    margin: 100px 0;
+    width: 300px;
+    align-self: center;
 }

@@ -28,7 +28,7 @@ body {
 .wrapper {
     width: 190px;
     align-self: center;
-    margin: 0 0 130px;
+    margin: 0 0 150px;
 }
 
 .animal-info{
@@ -51,4 +51,5 @@ h2 {
 p {
     color: rgb(212, 187, 173);
     font-size: 1.1em;
+    margin-top: 5px;
 }

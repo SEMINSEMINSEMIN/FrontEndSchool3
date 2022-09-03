@@ -25,38 +25,30 @@ body {
     width: 1px; 
 } 
 
-.animalinfo {
-    position: relative;
+.wrapper {
     width: 190px;
     align-self: center;
-    margin: 190px 0 150px;
+    margin: 0 0 130px;
+}
+
+.animal-info{
+    margin-top: -3px;
     background-color: rgb(147, 87, 49);
+    padding: 10px 10px 20px;
     border-radius: 0 0 15px 15px;
     border-bottom: 7px solid rgb(74, 38, 13);
+    overflow: auto;
 }
 
-.animal {
-    position: absolute;
-    top: -190px;
-    width: 190px;
-    height: 190px;
-}
-
-.grass {
-    position: absolute;
-    top: 0;
+.animal, .grass {
     width: 100%;
 }
 
-
 h2 {
-    margin-top: 40px;
     font-size: 2em;
-    padding: 0 10px;
 }
 
 p {
     color: rgb(212, 187, 173);
-    margin: 5px 10px 20px;
     font-size: 1.1em;
 }

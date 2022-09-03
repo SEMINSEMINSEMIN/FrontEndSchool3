@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
@@ -10,7 +9,7 @@ body {
     min-height: 100vh;
     display: flex;
     justify-content: center;
-    align-content: center;
+    font-size: 10px;
 }
 
 .hide-element {
@@ -25,8 +24,37 @@ body {
     width: 1px; 
 } 
 
-.wrapper {
-    margin: 200px 0;
-    width: 300px;
+.animalinfo {
+    position: relative;
+    width: 170px;
     align-self: center;
+    margin: 170px 0;
+    background-color: rgb(147, 87, 49);
+    border-radius: 0 0 15px 15px;
+    border-bottom: 7px solid rgb(74, 38, 13);
+}
+
+.animal {
+    position: absolute;
+    top: -170px;
+    width: 170px;
+    height: 170px;
+}
+
+.grass {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+
+h2 {
+    margin-top: 35px;
+    font-size: 2em;
+    padding: 0 10px;
+}
+
+p {
+    color: rgb(212, 187, 173);
+    margin: 5px 10px 15px;
 }

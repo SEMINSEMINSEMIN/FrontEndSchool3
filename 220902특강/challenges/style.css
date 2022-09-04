@@ -28,7 +28,7 @@ body {
 .wrapper {
     width: 190px;
     align-self: center;
-    margin: 0 0 150px;
+    margin: 0 10px 150px;
 }
 
 .animal-info{
@@ -45,8 +45,7 @@ body {
 }
 
 .animal {
-    position: relative;
-    top: 3px;
+    vertical-align: top;
 }
 
 h2 {

@@ -44,6 +44,11 @@ body {
     width: 100%;
 }
 
+.animal {
+    position: relative;
+    top: 3px;
+}
+
 h2 {
     font-size: 2em;
 }

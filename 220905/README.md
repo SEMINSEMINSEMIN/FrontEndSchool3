@@ -33,6 +33,6 @@
 ```
 
 ![](https://velog.velcdn.com/images/raontt2285/post/18bee7ef-e66c-4e47-a560-980296c399a9/image.png)
-## 2. 리뷰
-* section에는 **항상** 헤딩 태그가 있어야 함. 디자인적으로 section 안에 제목이 없어도 일단 HTML 코드 안에는 포함하자. 나중에 CSS로 화면에 보이지 않도록 하자. ir 기법
+## 2. 웹 구조 나누기 리뷰
+* section에는 **항상** 헤딩 태그가 있어야 함. 헤딩의 내용은 section 전체의 내용을 포괄할 수 있도록. 디자인적으로 section 안에 제목이 없어도 일단 HTML 코드 안에는 포함하자. 나중에 CSS로 화면에 보이지 않도록 하자. 
 

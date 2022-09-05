@@ -60,7 +60,7 @@
 * 날짜 순서에 따른 공지사항은 ul보다는 ol이 더 나음
 * [small 태그](https://www.w3schools.com/TAGS/tag_small.asp): 예를 들어 저작권 표시
 * 페이지 탑으로 올라가는 버튼: article보다는 a가 더 나음(article로 하기에는 너무 기능이 적으니까!)
-
+* 헤딩을 쓰기 애매할 때는 strong을 사용하자
 
 
 

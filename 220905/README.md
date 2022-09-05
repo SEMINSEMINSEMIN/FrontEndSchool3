@@ -58,7 +58,7 @@
 * nav > ul > li > a 와 nav > a의 차이는?
     * 꼭 ul li로 묶을 필요 없고 a 태그로만 써도 괜찮음. 스타일적인 부분에서 태그가 필요할 때는 추가적으로 묶을 수도 있음. 대신 필요가 없다면 쓸 데 없는 태그는 과감히 삭제하는게 좋다.
 * 날짜 순서에 따른 공지사항은 ul보다는 ol이 더 나음
-
+* [small 태그](https://www.w3schools.com/TAGS/tag_small.asp)
 
 
 

@@ -1,10 +1,3 @@
-# 오늘의 회고
-## 1. 오늘 배운 것
-1. 회고의 중요성
-2. HTML **모듈화**의 중요성
-## 2. 헷갈리는 것
-1. button과 a의 차이점
----
 # 회고 스프린트1
 ## 1. 개발자로서의 자세
 ### 1.1 피드백 주도 성장
@@ -24,7 +17,7 @@
 4. 그날 배운 내용을 실습을 통해 복습하기
 ---
 # 시멘틱 마크업
-[강의 추천](https://www.youtube.com/watch?v=OM6XIICm_qo&t=332s)
+[강의 추천, Linked data](https://www.youtube.com/watch?v=OM6XIICm_qo&t=332s)
 ## 1. 시멘틱 마크업을 사용해야 하는 이유
 ### 1.1 웹 에이전트
 * 웹페이지의 HTML 마크업 문법 분석
@@ -38,7 +31,6 @@
 ```html
 <a href="">유아용 침대</a>
 ```
-
 ![](https://velog.velcdn.com/images/raontt2285/post/18bee7ef-e66c-4e47-a560-980296c399a9/image.png)
 ## 2. 웹 구조 나누기 리뷰
 * section에는 **항상** 헤딩 태그가 있어야 함. 헤딩의 내용은 section 전체의 내용을 포괄할 수 있도록. 디자인적으로 section 안에 제목이 없어도 일단 HTML 코드 안에는 포함하자. 나중에 CSS로 화면에 보이지 않도록 하자.
@@ -69,9 +61,6 @@
 * 페이지 탑으로 올라가는 버튼: article보다는 a가 더 나음(article로 하기에는 너무 기능이 적으니까!)
 * 헤딩을 쓰기 애매할 때는 strong을 사용하자(동물의 숲 '알림' 참고)
 * [time 태그](https://www.w3schools.com/tags/tag_time.asp)
-
-
-
 
 
 

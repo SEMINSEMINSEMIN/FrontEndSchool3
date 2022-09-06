@@ -151,7 +151,7 @@
 * 현재 HTML 페이지 내에서 또 다른 **HTML** 페이지를 보여주고 싶을 때
 * 기본 사이즈: 150px X 300px
 * 사용에 주의해야 함
-    * [DBD 공격](https://remybaek.tistory.com/124)
+    * [DBD 공격](https://velog.io/@unihit/TIL-DBDDrive-By-Download-공격-개요)
 * [관련 유튜브 강의](https://developers.google.com/youtube/player_parameters?hl=ko)
 * [autoplay에 관해: 사용을 지양하자](https://developer.mozilla.org/ko/docs/Web/Media/Autoplay_guide)
 ## <video\>

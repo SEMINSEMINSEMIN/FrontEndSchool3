@@ -35,7 +35,7 @@
 ```
 2. <wbr\>
 * html에서는 공백을 기준으로 문자인지 단어인지를 구분함
-* CSS 속성: [word-break](https://velog.io/@m-vault/white-space는-무엇인가)
+* CSS 속성: [word-break](https://developer.mozilla.org/en-US/docs/Web/CSS/word-break)
     * 줄바꿈이 **단어**와 **단어** 기준으로
     * 공간이 단어를 수용하지 못하면 **단어**를 줄바꿈함
     * 단, CJK언어는(중국어, 일본어, 한국어) **한 글자** 기준으로 줄바꿈(word-break: break-all)
@@ -44,7 +44,7 @@
     Lorem ipsum dolor dolor dolor<wbr> sitsitsitsit amet
 </p>
 ```
-* white-space: nowrap 사용시 텍스트가 p의 콘텐츠 area를 벗어남
+* [white-space](https://velog.io/@m-vault/white-space는-무엇인가): nowrap 사용시 텍스트가 p의 콘텐츠 area를 벗어남
 * <wbr\>을 사용하면 내가 의도한대로 sitsitsitsit amet이 줄바꿈됨
 ```html
 <p style="white-space: nowrap">
@@ -54,8 +54,8 @@
 ## <a href="경로"\>
 * href 속성을 사용하지 않고 자바스크립트로 경로를 지정할 수도 있지만 **웹 접근성에 위배되기 때문에** href 속성을 사용해주는게 좋다.
     * 왜 웹 접근성에 위배될까?
-    1. 브라우저가 html을 해석할 때는 href를 통해 <a\>가 어디로 향하는지 해석함
-    2. 검색 에이전트는 자바스크립트를 읽지않음. html 문서만 읽음.
+    * 브라우저가 html을 해석할 때는 href를 통해 <a\>가 어디로 향하는지 해석함
+    * 검색 에이전트는 자바스크립트를 읽지않음. html 문서만 읽음.
 * 앵커 태그만 예외적으로 sections, grouping content 요소를 자식으로 하는것이 허용됨
 * <a> 요소안의 자식으로는 <a> 요소나 <button> 과 같이 사용자와 인터렉션이 가능한 요소를 자식으로 두지 않기 때문에 주의가 필요함(마찬가지로 button 안에도 a를 넣지말자)
 ```html
@@ -96,7 +96,7 @@
 * 기울임 글꼴
 * <i\>는 <b\>와 달리 의미 있음. 전문 용어, 주 언어와 다른 언어로 표현된 부분 등 주위와 구분해야 하는 부분을 표현하기 위해
 * <em\>는 강조의 의미가 있음(강한 강조)
-## <dfn>
+## <dfn\>
 * 현재 문맥에서 정의하고 있는 용어를 나타냄. <dfn\>의 가장 가까운 부모가 <p\> 혹은 <dt\><dd\> 쌍, <section\> 요소일 경우 그 컨텐츠를 dfn의 정의에 대한 설명으로 간주. 문서에서 **최초로** 나타났을 때 사용.
 ```html
 <dl>
@@ -108,7 +108,7 @@
 	</dd>
 </dl>
 ```
-## <abbr>
+## <abbr\>
 * 준말, 약자
 ```html
 <dl>

@@ -1,4 +1,3 @@
-# HTML > 7. Text-level semantics
 ## TIL
 ### 1. 팁
 * 실무에서는 주석을 앵간하면 안 씀
@@ -6,10 +5,12 @@
 * a 태그가 새창에서 열리는지 현재 창에서 열리는지 기획자에게 물어보기
 물어보자
 ### 2. 오늘 새로 배운 것
+1. HTML > 7. Text-level semantics
+2. html semantic element 코드 리뷰(220905 모두의 HTML/CSS 과제)
 ### 3. 배운 것을 적용
 ### 4. 느낀점
 ---
-## 텍스트 레벨 요소의 특징
+## HTML > 7. Text-level semantics
 1. 요소**안**의 **컨텐츠**의 크기만큼만 영역을 점유합니다.
 2. 자식으로 Sections, Grouping Contents를 배치할 수 없습니다.
 * cf) Sections, Grouping contents는 부모의 content area만큼을 전부 다 차지
@@ -53,7 +54,7 @@
     1. 브라우저가 html을 해석할 때는 href를 통해 <a\>가 어디로 향하는지 해석함
     2. 검색 에이전트는 자바스크립트를 읽지않음. html 문서만 읽음.
 * 앵커 태그만 예외적으로 sections, grouping content 요소를 자식으로 하는것이 허용됨
-* <a> 요소안의 자식으로는 <a> 요소나 <button> 과 같이 사용자와 인터렉션이 가능한 요소를 자식으로 두지 않기 때문에 주의가 필요함
+* <a> 요소안의 자식으로는 <a> 요소나 <button> 과 같이 사용자와 인터렉션이 가능한 요소를 자식으로 두지 않기 때문에 주의가 필요함(마찬가지로 button 안에도 a를 넣지말자)
 ```html
     <!-- 같은 탭에서 네이버로 이동 -->
     <a href="https://www.naver.com">click</a>

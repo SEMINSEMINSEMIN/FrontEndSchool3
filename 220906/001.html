@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- src -->
+    <!-- 상대경로: 현재 폴더에 horse.jpg -->
+    <img src="./horse.jpg" alt="">
+    <!-- 상대경로: 상위 폴더에 horse.jpg -->
+    <img src="./horse.jpg" alt="">
+    <!-- 절대경로 -->
+    <img src="/Users/gangsemin/Documents/FrontendSchool3/220906/img/horse.jpg" alt="">
+
+    <!-- alt -->
+    <!-- 비어있는 경우 스크린리더가 읽지 않음 -->
+    <img src="horse.jpg" alt="">
+    <!-- 스크린리더가 '파일명'(a 이미지)을 읽음 -->
+    <img src="horse.jpg">
+    <!-- 스크린리더가 '이미지'를 읽음, 근데 이렇게 alt 주지 말자. 최대한 상세하게 -->
+    <img src="horse.jpg" alt="이미지">
+
+    <!-- srcset -->
+    <!-- 모니터의 해상도에 따라 이미지를 다르게, 다양한 크기를 가지는 동일 이미지를 최소 2개 이상 사용할 때 사용 -->
+    <!-- 해상도 확인: 개발자 화면의 콘솔창에서 window.devicePixelRatio 명령어를 입력 -->
+    <!-- src 속성 유지 필수(srcset 사용 불가 브라우저를 위한 이미지) -->
+    <img
+        width="200px"
+        srcset="img/logo_1.png 2x,
+        img/logo_2.png 3x"
+        src="horse.png"
+        alt="test">
+        <!-- x 서술자: 디바이스 화소 밀도에 따른 이미지 로딩 -->
+    <img
+        width="200px"
+        srcset="img/logo_3.png 700w,
+                img/logo_2.png 600w,
+				img/logo_1.png 300w"
+        src="horse.png"
+        alt="test">
+        <!-- w 서술자: 원본 이미지의 넓이가 몇 px인지 알려줌 -->
+        <!-- w와 x는 동시에 사용 불가능 -->
+        <img
+        srcset="img/logo_3.png 700w,
+                img/logo_2.png 600w,
+                img/logo_1.png 300w"
+        sizes="(min-width: 960px) 250px,
+               (min-width: 620px) 150px,
+               300px"
+        src="a.png"
+        alt="test">
+        <!-- sizes: 뷰포트의 조건에 따라 이미지가 차지하게 될 사이즈 알려줌 -->
+        <!-- 브라우저는 우리가 제공한 이미지의 원본 사이즈와 뷰포트에 따른 이미지의 사이즈 정보를 통합해 가장 적절한 이미지를 로딩 -->
+        <!-- 웹표준을 준수하기 위해서는 srcset 속성을 사용하면 그에 맞는 sizes 속성도 반드시 명시되어야 함 -->
+        <!-- CSS 스타일이 sizes 속성에 우선함. 협업할 때는 사전에 반드시 동료들에게 어떠한 방법으로 반응형 이미지를 처리했는지 공유할것 -->
+</html>

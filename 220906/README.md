@@ -1,7 +1,7 @@
 # TIL
 ## 1. 오늘 새로 배운 것
 1. HTML > 7. Text-level semantics
-2. html semantic element 코드 리뷰(220905 모두의 HTML/CSS 과제)
+2. [html semantic element 코드 리뷰(220905 모두의 HTML/CSS 과제)](https://github.com/SEMINSEMINSEMIN/FrontendSchool3/tree/main/220905/과제)
 ## 2. 배운 것을 적용
 ## 3. 느낀점
 ## 4. 팁

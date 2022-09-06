@@ -131,8 +131,14 @@
 * div와 마찬가지로 최후 수단으로 사용할것
 ---
 # HTML > 8. Embedded content
-## <img\>
-[sizes](https://heropy.blog/2019/06/16/html-img-srcset-and-sizes/)
+## [<img\>](https://github.com/SEMINSEMINSEMIN/FrontendSchool3/blob/main/220906/001.html)
+* src
+* alt
+    * 이미지가 보이지 않을 때 alt 속성에 적힌 텍스트를 이미지 대신 보여줌
+    * 접근성
+    * SEO
+* [srcset](https://heropy.blog/2019/06/16/html-img-srcset-and-sizes/)
+
 ## <picture\>
 * **점진적 향상기법**: 기본적으로 예전 기술 환경에서 동작할 수 있는 기능을 구현해두고, 최신 기술을 사용할 수 있는 환경에서는 최신 기술을 제공하여 더 나은 사용자 경험을 제공할 수 있는 방법
 * 이미지 포맷의 종류(어떤 이미지로 서비스를 할 것인가에 대해 고민을 해봐야 함)

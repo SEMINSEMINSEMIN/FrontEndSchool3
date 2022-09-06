@@ -139,7 +139,7 @@
     * SEO
 * [srcset](https://heropy.blog/2019/06/16/html-img-srcset-and-sizes/)
 
-## <picture\>
+## [<picture\>](https://github.com/SEMINSEMINSEMIN/FrontendSchool3/blob/main/220906/002.html)
 * 해상도에 따라 '다른 이미지'를 보여주고 싶을 때에는 picture를, 같은 이미지인데 해상도에 따라 더 높은 해상도 이미지를 보여주고 싶을 때에는 srcset을 사용합니다.
 * img의 srcset와의 차이: 화면에 따른 이미지 포맷 변경 가능
 * WebP나 AVIF와 같은 최신 포맷 이미지를 지원하고 싶으며 크로스브라우징을 위해 <picture\> 요소와 함께 사용하는 것이 좋다!
@@ -147,10 +147,13 @@
 * 이미지 포맷의 종류(어떤 이미지로 서비스를 할 것인가에 대해 고민을 해봐야 함)
     * 상황에 따라 다르긴 하지만, GIF보다 SVG 많이 사용. 그런데 크기가 큰 SVG는 사용을 지양하자
     * [이미지 압축 사이트](https://compressjpeg.com/ko/)
-## <iframe\>
+## [<iframe\>](https://github.com/SEMINSEMINSEMIN/FrontendSchool3/blob/main/220906/003.html)
+* 현재 HTML 페이지 내에서 또 다른 **HTML** 페이지를 보여주고 싶을 때
+* 기본 사이즈: 150px X 300px
 * 사용에 주의해야 함
     * [DBD 공격](https://remybaek.tistory.com/124)
 * [관련 유튜브 강의](https://developers.google.com/youtube/player_parameters?hl=ko)
+* [autoplay에 관해: 사용을 지양하자](https://developer.mozilla.org/ko/docs/Web/Media/Autoplay_guide)
 ## <video\>
 * 사용 지양(용량 문제 때문에)
 * 이거보다는 <iframe\> 사용 권장!

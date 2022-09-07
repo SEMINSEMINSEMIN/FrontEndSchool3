@@ -48,17 +48,57 @@
 ## 2. <input\>
 ### 2.1 속성
 * 용어만 알아두기: Shadow DOM
-1. [type](https://github.com/SEMINSEMINSEMIN/FrontendSchool3/blob/main/220907/002.html): text, radio, checkbox, password, button 등
+1. [type](https://github.com/SEMINSEMINSEMIN/FrontendSchool3/blob/main/220907/002.html): text, radio, checkbox, password, **button** 등
 2. name
-3. readonly
+3. [readonly](https://github.com/SEMINSEMINSEMIN/FrontendSchool3/blob/main/220907/003.html)
 4. maxlength
 5. minlength
 6. required
 7. autofocus: 웹 페이지 로딩시 이 속성을 지정한 태그로 포커스 바뀜
 8. placeholder
 9. pattern
-## 3. <label\>
-## 4. <select\>
-## 5. <fieldset\>
+## 3. [<label\>](https://github.com/SEMINSEMINSEMIN/FrontendSchool3/blob/main/220907/004.html)
+* [name이 통일되면 택1로 바뀐다](https://github.com/SEMINSEMINSEMIN/FrontendSchool3/blob/main/220907/005.html)
+## 4. [<select\>](https://github.com/SEMINSEMINSEMIN/FrontendSchool3/blob/main/220907/006.html)
+* 드롭다운
+* 속성: multiple, size(별로 안 사용함)
+## 5. [<fieldset\>](https://github.com/SEMINSEMINSEMIN/FrontendSchool3/blob/main/220907/007.html)
+* 자식 요소로 사용되는 폼 컨트롤들을 그룹화 할 수 있음
+* 폼 내용이 방대하여 섹션별로 나눌 필요성이 있을 경우 유용
+## 6. <legend\>
+* <fieldset\> 태그 바로 뒤에 위치하며 폼 그룹의 목적을 나타내는 제목을 의미한다. 반드시 <fieldset\>의 첫번째 자식으로 사용해야 함
+## 7. <button\>
+### 7.1 button 태그의 type
+* submit: default, 서버로 양식 데이터 제출, 폼의 용도가 제출이 아니면 반드시 type을 따로 선언해줘야 한다
+* reset: form의 모든 값을 초기화함
+* button: 클릭 가능한 버튼, 기능을 부여하기 전에는 별다른 작동을 하지 않는다
+```html
+<!-- 네이버 메인 화면의 검색 버튼 html 구조 -->
+
+<button id="search_btn" type="submit" title="검색">
+	<span class="blind">검색</span>
+	<span class="ico_search_submit"></span>
+</button>
+```
+### 7.2 input vs button 무엇을 써야할까?
+* 스타일 적용에는 input이 더 좋다(input과 달리, button은 닫는 태그가 있음)
+## 8. <textarea\>
+* cols: 입력창의 넓이, 양수 값만 사용 가능, 기본값 20
+* rows: 줄의 수
+```html
+<textarea name="" id="" cols="40" rows="10" maxlength="10" minlength="5"></textarea>
+```
+## 9. <datalist\>
+* 선택 옵션을 제공함과 동시에, 옵션에 선택하고 싶은 값이 없는 경우 임의의 값을 입력 받을 수 있도록 편의성 제공
+```html
+<label for="solasystem">원하는 행성을 선택하세요 : </label>
+<input type="text" id="solasystem" list="planets" name="planets">
+<datalist id="planets">
+    <option value="수성">수성</option>
+    <option value="금성">금성</option>
+    <option value="지구">지구</option>
+    <option value="화성">화성</option>
+</datalist>
+```
 ---
 # CSS > 1. CSS

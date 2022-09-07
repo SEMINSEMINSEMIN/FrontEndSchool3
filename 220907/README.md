@@ -39,7 +39,7 @@
     * Read: SQL(SELECT), method(GET)
     * Update: SQL(UPDATE), method(PUT)
     * Delete: SQL(DELETE), method(DELETE)
-### 1.2 폼의 속성
+### [1.2 폼의 속성](https://github.com/SEMINSEMINSEMIN/FrontendSchool3/blob/main/220907/001.html)
 1. action: 입력 값을 전송할 서버의 URL
 2. method: 폼의 데이터를 **전송**할 **방법**을 정함
     * get: **URL**로 데이터를 **전달**할 때 사용(큰 파일은 get으로 전송하지 않음. id와 pw와 같은 민감 데이터x), 남들한테 URL 공유시(예를 들어 447번 게시물 공유) get만 가능하고 POST는 불가능하다(주소에 입력 내용이 나타나지 않으니까)
@@ -48,13 +48,13 @@
 ## 2. <input\>
 ### 2.1 속성
 * 용어만 알아두기: Shadow DOM
-1. type
+1. [type](https://github.com/SEMINSEMINSEMIN/FrontendSchool3/blob/main/220907/002.html): text, radio, checkbox, password, button 등
 2. name
 3. readonly
 4. maxlength
-5. minlength: 꼭 입력하게 하려고
+5. minlength
 6. required
-7. autofocus
+7. autofocus: 웹 페이지 로딩시 이 속성을 지정한 태그로 포커스 바뀜
 8. placeholder
 9. pattern
 ## 3. <label\>

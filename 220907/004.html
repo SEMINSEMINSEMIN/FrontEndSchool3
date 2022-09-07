@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 이 방식은 사용하지 않음 -->
+    이름:
+    <input type="text" name="name">
+
+    <hr>
+
+    <!-- 라벨을 눌러도 인풋에 커서가 포커싱 됨 -->
+    <!-- 이름과 input 사이의 빈공간: HTML 개행 -->
+    <!-- 자바스크립트로 label과 input 사이의 텍스트 노드를 삭제 할 수 있다 -->
+    <label>
+        이름 :
+        <input type="text" name="name">
+    </label>
+    
+    <label for="fullname">이름:</label>
+    <input type="text" name="name" id="fullname">
+</body>
+</html>

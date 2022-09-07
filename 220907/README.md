@@ -1,6 +1,8 @@
 # TIL
 ## 팁
 * 개발되어 있는 바퀴를 새로 만들지 마라
+
+* https://paullabworkspace.notion.site/WHATWG-URL-s-origin-property-de2eed15f8ef4688ba4b089c9e7e2d0a
 ---
 # HTML > 9. Forms
 ## 1. <Form\> 기본 속성
@@ -29,7 +31,8 @@
     * 비효율적
     * DB의 목적(데이터 인덱싱)에 맞지 않음
     * 이를 해결하기 위해 API image server를 따로 두는 경우 있음(API server의 경우 브라우저와 직접 연결되어 있음)
-* API server
+* [API server](https://paullabworkspace.notion.site/API-API-Server-bab406c7453b4654a183a03bcf8dac96)
+    * 애플리케이션을 서로 연결하여 서로 통신할 수 있다
     * 이미지를 직접 만들 필요 없고 저장할 필요 없이 API 서버에 URL을 보내면 API 서버가 이미지를 줌
 * CRUD
     * Create: SQL(INSERT), method(POST)
@@ -37,21 +40,23 @@
     * Update: SQL(UPDATE), method(PUT)
     * Delete: SQL(DELETE), method(DELETE)
 ### 1.2 폼의 속성
-1. action: 입력 값을 전송할 페이지
-2. method: 폼의 데이터를 전송할 방법을 정함
-    * get: 웹 서버에 데이터 요청시 사용, 주소에 데이터가 입력되어 있음(001.html 참고), URL로 데이터를 전달할 때 사용(큰 파일은 get으로 전송하지 않음. id와 pw와 같은 민감 데이터x), 남들한테 URL 공유시(예를 들어 447번 게시물 공유) get만 가능하고 POST는 불가능하다(주소에 입력 내용이 나타나지 않으니까)
-    * post: 파일을 올리거나 보안이 필요한 데이터 전송할 때, 주소에 입력 내용이 나타나지 않도록 함, 민감 데이터 O, 큰 데이터 o
+1. action: 입력 값을 전송할 서버의 URL
+2. method: 폼의 데이터를 **전송**할 **방법**을 정함
+    * get: **URL**로 데이터를 **전달**할 때 사용(큰 파일은 get으로 전송하지 않음. id와 pw와 같은 민감 데이터x), 남들한테 URL 공유시(예를 들어 447번 게시물 공유) get만 가능하고 POST는 불가능하다(주소에 입력 내용이 나타나지 않으니까)
+    * post: url에 **데이터가 노출되면 안되는 것일 때**, 파일을 올리거나 보안이 필요한 데이터 **전송**할 때, 주소에 입력 내용이 나타나지 않도록 함, 민감 데이터 o, 큰 데이터 o, ?post로 불러올 수도 있음?
+    * 얘네는 HTTP의 get, post와 다름
 ## 2. <input\>
 ### 2.1 속성
 * 용어만 알아두기: Shadow DOM
 1. type
 2. name
-3. readonly: 어려운 것(보안 문제?)
+3. readonly
 4. maxlength
-5. minlength
+5. minlength: 꼭 입력하게 하려고
 6. required
 7. autofocus
 8. placeholder
 9. pattern
-
-
+## 3. <label\>
+## 4. <select\>
+## 5. <fieldset\>

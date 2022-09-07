@@ -155,7 +155,9 @@
 * [관련 유튜브 강의](https://developers.google.com/youtube/player_parameters?hl=ko)
 * [autoplay에 관해: 사용을 지양하자](https://developer.mozilla.org/ko/docs/Web/Media/Autoplay_guide)
 ## <video\>
-* 사용 지양(용량 문제 때문에)
+* 사용 지양(ex. 3G이면 3000명 이상 접속하면 다운됨)
+    * 부하분산 100명의 동접자
+    * 트래픽 월간 관리 측면
 * 이거보다는 <iframe\> 사용 권장!
 * preload: 좋은 사용자 경험을 위해(속도 문제), 기본값은 브라우저마다 다름
     * none: 미리 로딩 x
@@ -163,5 +165,9 @@
     * auto: 미리 로딩 o
 * poster: 영상이 로딩 중일 때 대신해서 화면에 보여줄 이미지 지정
 * track: 자막과 같은 시간 기반 텍스트 데이터를 보여주고자 할 때
+* 코덱과 포멧의 차이 알아두기(노션 참고)
 ## <audio\>
-* 사용 지양
+* 음악 컨텐츠 재생 위한 태그
+* controls: 컨트롤러
+* autoplay: 자동재생(chrome에서는 자동 재생 x, 그래서 Js로 컨트롤)
+* loop: 음악 반복

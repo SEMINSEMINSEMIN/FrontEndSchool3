@@ -154,7 +154,7 @@
     * [DBD 공격](https://velog.io/@unihit/TIL-DBDDrive-By-Download-공격-개요)
 * [관련 유튜브 강의](https://developers.google.com/youtube/player_parameters?hl=ko)
 * [autoplay는 항상 mute 속성과 사용되어야 한다. 이러한 특징은 video, iframe, audio 모두에 동일하게 적용됨](https://developer.mozilla.org/ko/docs/Web/Media/Autoplay_guide)
-## <video\>
+## [<video\>](https://github.com/SEMINSEMINSEMIN/FrontendSchool3/blob/main/220906/005.html)
 * 사용 지양(ex. 3G이면 3000명 이상 접속하면 다운됨)
     * 부하분산 100명의 동접자
     * 트래픽 월간 관리 측면
@@ -169,7 +169,7 @@
     * srclang: 텍스트 트랙의 언어
     * label: 텍스트 트랙의 제목
 * 코덱과 포멧의 차이 알아두기(노션 참고)
-## <audio\>
+## [<audio\>](https://github.com/SEMINSEMINSEMIN/FrontendSchool3/blob/main/220906/004.html)
 * 음악 컨텐츠 재생 위한 태그
 * controls: 컨트롤러
 * autoplay: 자동재생(chrome에서는 자동 재생 x, 그래서 Js로 컨트롤)

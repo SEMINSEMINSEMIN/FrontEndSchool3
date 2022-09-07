@@ -7,12 +7,19 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="001.html" method="">
+    <form action="001.html" method="GET">
         <input type="text" name="id" />
         <input type="password" name="pw" />
         <button type="submit">로그인</button>
         <!-- 아무것도 입력 안 하고 버튼 누르면: http://127.0.0.1:5500/220907/001.html? -->
         <!-- 아이디에 123, pw에 456을 입력하고 버튼을 누르면: http://127.0.0.1:5500/220907/001.html?id=123&pw=456 -->
+    </form>
+    <form action="001.html" method="POST">
+        <input type="text" name="id" />
+        <input type="password" name="pw" />
+        <button type="submit">로그인</button>
+        <!-- 아무것도 입력 안 하고 버튼 누르면: http://127.0.0.1:5500/220907/001.html -->
+        <!-- 아이디에 123, pw에 456을 입력하고 버튼을 누르면: http://127.0.0.1:5500/220907/001.html -->
     </form>
 </body>
 </html>

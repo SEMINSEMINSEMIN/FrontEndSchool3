@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="003.html" method="get">
+        <!-- 회원 가입 할 때, 주민등록번호 입력 받으면 성별이 들어가는 경우 -->
+        <!-- 해커가 read only를 지우고, 내가 바꾸지 않고 싶던 것을 바꿔버릴 수 있음 -->
+        <!-- 이를 해결하기 위해서는, 유효성 검증 코드 또는 난독화 -->
+        <input type="text" name="성별" value = "남" readonly>
+        <input type="text" name="아이디">
+        <input type="text" name="text" maxlength="10">
+        <button type="submit">회원가입</button>
+        <script>
+            // 유효성 검증 코드
+        </script>
+    </form>
+</body>
+</html>

@@ -142,7 +142,7 @@
 ## [<picture\>](https://github.com/SEMINSEMINSEMIN/FrontendSchool3/blob/main/220906/002.html)
 * 해상도에 따라 '다른 이미지'를 보여주고 싶을 때에는 picture를, 같은 이미지인데 해상도에 따라 더 높은 해상도 이미지를 보여주고 싶을 때에는 srcset을 사용합니다.
 * img의 srcset와의 차이: 화면에 따른 이미지 포맷 변경 가능
-* WebP나 AVIF와 같은 최신 포맷 이미지를 지원하고 싶으며 크로스브라우징을 위해 <picture\> 요소와 함께 사용하는 것이 좋다!
+* WebP나 AVIF와 같은 최신 포맷 이미지를 지원하고 싶으면 크로스브라우징을 위해 <picture\> 요소와 함께 사용하는 것이 좋다!
 * **점진적 향상기법**: 기본적으로 예전 기술 환경에서 동작할 수 있는 기능을 구현해두고, 최신 기술을 사용할 수 있는 환경에서는 최신 기술을 제공하여 더 나은 사용자 경험을 제공할 수 있는 방법
 * 이미지 포맷의 종류(어떤 이미지로 서비스를 할 것인가에 대해 고민을 해봐야 함)
     * 상황에 따라 다르긴 하지만, GIF보다 SVG 많이 사용. 그런데 크기가 큰 SVG는 사용을 지양하자
@@ -153,7 +153,7 @@
 * 사용에 주의해야 함
     * [DBD 공격](https://velog.io/@unihit/TIL-DBDDrive-By-Download-공격-개요)
 * [관련 유튜브 강의](https://developers.google.com/youtube/player_parameters?hl=ko)
-* [autoplay에 관해: 사용을 지양하자](https://developer.mozilla.org/ko/docs/Web/Media/Autoplay_guide)
+* [autoplay는 항상 mute 속성과 사용되어야 한다. 이러한 특징은 video, iframe, audio 모두에 동일하게 적용됨](https://developer.mozilla.org/ko/docs/Web/Media/Autoplay_guide)
 ## <video\>
 * 사용 지양(ex. 3G이면 3000명 이상 접속하면 다운됨)
     * 부하분산 100명의 동접자
@@ -165,6 +165,9 @@
     * auto: 미리 로딩 o
 * poster: 영상이 로딩 중일 때 대신해서 화면에 보여줄 이미지 지정
 * track: 자막과 같은 시간 기반 텍스트 데이터를 보여주고자 할 때
+    * kind: 텍스트 트랙의 종류, subtitles(자막) 또는 caption(캡션)
+    * srclang: 텍스트 트랙의 언어
+    * label: 텍스트 트랙의 제목
 * 코덱과 포멧의 차이 알아두기(노션 참고)
 ## <audio\>
 * 음악 컨텐츠 재생 위한 태그

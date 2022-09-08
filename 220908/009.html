@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* important가 둘 다 적용됐을 때 castcading에 영향을 받는다 */
+        .one {
+            color: red !important; 
+        }
+        .two {
+            color: blue !important; 
+        }
+    </style>
+</head>
+<body>
+    <!-- 클래스 기입 순서는 중요하지 않다 -->
+    <div class="one two">lorem</div>
+    <div class="two one">lorem</div>
+    <!-- !importants는 inline css보다 우선한다 -->
+    <div class="two" style="color:green">lorem</div>
+</body>
+</html>

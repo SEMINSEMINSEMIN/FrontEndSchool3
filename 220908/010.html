@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* one의 전체 너비는 120px */
+        .one {
+            border: 10px black solid;
+            padding: 0px;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+        }
+        .two {
+            border: 10px black solid;
+            padding: 0px;
+            /* width와 height는 box-sizing: border-box;가 없을 경우 content의 영역만을 의미함. */
+            width: 100px;
+            height: 100px;
+            /* border 기준으로 width와 height를 잡음 */
+            box-sizing: border-box;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="one">hello world</div>
+    <div class="two">hello world</div>
+</body>
+</html>

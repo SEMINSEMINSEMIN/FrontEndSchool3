@@ -18,6 +18,7 @@
 * 빠르게 만드는 연습(반복)
 * 인프콘(인프런에 강의 있음)
 * 빨리 끝내야할 때 UI 사기
+* [flex 연습 사이트](https://flexboxfroggy.com/#ko)
 ---
 # CSS > 3. RESET CSS
 ---
@@ -38,7 +39,12 @@
 * !important: 사용 지양
 ---
 # CSS > 7. CSS Box Model
-# 7.1 박스의 구성
+## 7.1 박스의 구성
+* 패딩
+## 7.2 박스의 유형(중요)
+## 7.3 표준 CSS 박스 모델
+1. width, height
+2. border
 ---
 # 1만 시간의 법칙 반응형 웹 구현
 ## img vs background-img

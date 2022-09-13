@@ -22,8 +22,8 @@
 * [flex 연습 사이트](https://flexboxfroggy.com/#ko)
 ---
 # CSS > 3. RESET CSS
-* [에릭 마이어의 reset CSS](https://github.com/SEMINSEMINSEMIN/FrontendSchool3/blob/main/220908/CSS%20reset/reset.css): 기존 스타일 모두 제거
-* normalize.CSS: 브라우저 고유의 스타일을 존중하면서 거기에 스타일을 첨가하는, 좀 더 부드러운 방법
+* [에릭 마이어의 reset CSS](https://github.com/SEMINSEMINSEMIN/FrontendSchool3/blob/main/220908/CSS%20reset/reset.css): 기존 스타일 모두 제거, 이것도 아직 많이 씀
+* normalize.CSS: 브라우저 고유의 스타일을 존중하면서 거기에 스타일을 첨가하는, 좀 더 부드러운 방법, 요즘 많이 씀
 * CSS Remedy
 ---
 # CSS > [4. 공백처리, 주석 및 벤더프리픽스](https://github.com/SEMINSEMINSEMIN/FrontendSchool3/blob/main/220908/002.html)
@@ -98,6 +98,9 @@ h1, h2, h3 {color: red};
 ![](./border-radius.png)
 3. padding, margin
 * margin 겹침 현상
+    * 형제 간
+    * 부모 자식 간
+## 7.4 대체 CSS 박스 모델
 ---
 # 1만 시간의 법칙 반응형 웹 구현
 ## img vs background-img

@@ -17,9 +17,12 @@
 ---
 # CSS > 8. CSS declarations
 ## 8.1 단위
-* 폰트는 가변 단위로 주는게 좋다
+1. 절대 길이 단위
+* px
+2. 상대 길이 단위: 폰트는 상대 길이 단위로 주는게 더 좋다
 * em
-* rem: 기본적으로 rem을 많이 쓰고 ex) 버튼(large, medium, small) 등에 텍스트의 비율에 따라 달라져야 할 경우 em을 씁니다!
+* rem
+    * 실무에서는 기본적으로 rem을 em보다 많이 쓰고 ex) 버튼(large, medium, small) 등에 텍스트의 비율에 따라 달라져야 할 경우 em을 씁니다!
 * %
 * vw
 * vmax, vmin

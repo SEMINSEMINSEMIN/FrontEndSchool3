@@ -28,5 +28,13 @@
 * css를 이용해 화면에서 안 보이게 하기
 ## 8.3 background-image
 ## 8.4 font
+* 웹 폰트: 처음부터 최적화하는건 좀 어려운 일
 ## 8.5 opacity
 ## 8.6 color
+* 00(R)00(G)00(B) ~ FFFFFF
+* FF0000: red(F00와 같다)
+* bin - 2진수: 01
+* oct - 8진수: 01234567
+* hex - 16진수: 0123456789abcdef
+---
+# CSS > 9. Text

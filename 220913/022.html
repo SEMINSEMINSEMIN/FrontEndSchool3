@@ -1,25 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>line-height</title>
     <style>
-        p {
-            margin: 0;
-            padding: 0;
-            /* line-height: 100px; */
+        .container {
+            width: 300px;
+            height: 300px;
+            font-size: 16px;
+            border: solid 1px black;
+            /* 디폴트, font-family에 따라 line-height 값이 다르다 */
+            /* .three의 경우 content area 높이가 36 */
             /* line-height: normal; */
-            /* 폰트 사이즈에 비례 */
-            line-height: 3;
-            border: 1px solid black;
+
+            /* 고정 값으로 주었을 경우 : .one, .two, .three 모두 content area 높이가 10 */
+            /* overflow: visible;로 인해 글자는 영역을 삐져나옴 -> 그 결과 글자끼리 겹침 */
+            /* line-height: 10px; */
+
+            /* em으로 주었을 경우 : body의 폰트 사이즈가 16px이기 때문에 .one, .two, .three 모두 content area 높이가 16 */
+            /* overflow: visible;로 인해 글자는 영역을 삐져나옴 -> 그 결과 글자끼리 겹침 */
+            /* line-height: 1em; */
+
+            /* line-height: 1; font size 값 만큼의 라인 높이 의미 */
+            /* line-height: 2; font size 값의 두 배만큼의 라인 높이 의미 */
+            /* content area 높이가 .one의 경우 10, .two의 경우 20, .three의 경우 30. 그러나 만약 line-height가 없다면 .three의 경우 36! leading 영역이 폰트의 위 아래로 존재하기 때문, line-height 1은 이 leading 영역을 없앰(폰트 높이에 딱 붙게됨) */
+            line-height: 1;
+        }
+        .one {
+            font-size: 10px;
+            border: solid 1px black;
+        }
+        .two {
+            font-size: 20px;
+            border: solid 1px black;
+        }
+        .three {
+            font-size: 30px;
+            border: solid 1px black;
         }
     </style>
 </head>
 <body>
-    <p>hello world</p>
-    <p>hello world</p>
-    <p>hello world</p>
+    <h1>hello world</h1>
+    <div class="container">
+        <div class="one">hello world 1</div>
+        <div class="two">hello world 2</div>
+        <div class="three">hello world 3</div>
+    </div>
 </body>
 </html>

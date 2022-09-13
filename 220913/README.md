@@ -20,24 +20,74 @@
 1. 절대 길이 단위
 * px
 2. 상대 길이 단위: 폰트는 상대 길이 단위로 주는게 더 좋다
-* em
-* rem
+* em: 부모 요소의 글자 크기를 기준점으로
+* rem: html의 글자 크기를 기준점으로
     * 실무에서는 기본적으로 rem을 em보다 많이 쓰고 ex) 버튼(large, medium, small) 등에 텍스트의 비율에 따라 달라져야 할 경우 em을 씁니다!
-* %
-* vw
-* vmax, vmin
+* %: 부모 요소를 기준으로 하는 백분율 단위
+* vw(화면 넓이 기준), vh(화면 높이 기준)
+* vmax/vmin: 화면의 넓이와 높이 중 큰/작은 값을 기준으로 하는 백분율 단위
 * 그외 잘 사용하지 않는 단위
 ## 8.2 overflow
+* overflow: overflow-x overflow-y;
 * css를 이용해 화면에서 안 보이게 하기
 ## 8.3 background-image
+1. 관련 속성
+* background-image
+* background-color
+* background-repeat
+    * repeat
+    * no-repeat
+    * repeat-x
+    * repeat-y
+    * round
+    * space
+* background-position
+* background-size
+    * [contain과 cover의 차이](https://mytutorials.tistory.com/336)
+2. html과 body에 관하여
+3. img와 background-image의 사용 용도 차이
+* img: 백엔드 개발자와 협업해야 하는 공간
+* background-image: FE 혼자 작업하는 공간, 스크린리더가 읽지 않아야 하는 곳
 ## 8.4 font
-* 웹 폰트: 처음부터 최적화하는건 좀 어려운 일
+1. font-size
+[테스트 사이트](https://www.w3schools.com/cssref/playit.asp?filename=playcss_font-size&preval=medium)
+* medium: 웹브라우저에서 정한 기본 글자 크기
+* xx-small, x-small, small, large, x-large, xx-large
+* smaller, larger: 부모 요소의 font-size를 기준으로 하는 상대적 글자 크기
+* length
+* initial
+* inherit
+2. font-family
+* 웹 폰트
+* 아이콘: https://fontawesome.com
+* @font-face: 사용자 컴퓨터에 특정 폰트가 설치되어 있지 않아도 폰트를 **설치하여** 사용할 수 있도록
+```css
+@font-face {
+      font-family: "Bitstream Vera Serif Bold";
+      src: url("https://developer.mozilla.org/@api/deki/files/2934/=VeraSeBd.ttf");
+    }
+```
+* font format
+    * woff, ttf/otf: 모든 브라우저에서 지원
+    * woff2: 용량을 줄이는데 효과적, IE 지원 x
+3. font-weight
 ## 8.5 opacity
+* 투명도 지정
 ## 8.6 color
+1. 색상 이름
+2. RGB, RGBA
+3. HEX 값(16진수)
 * 00(R)00(G)00(B) ~ FFFFFF
 * FF0000: red(F00와 같다)
-* bin - 2진수: 01
-* oct - 8진수: 01234567
-* hex - 16진수: 0123456789abcdef
+4. HSL, HSLA
+* 색상, 채도(선명도), 명도(밝기), 투명도(선택사항)
+* https://hslpicker.com
 ---
 # CSS > 9. Text
+1. line-height
+2. letter-spacing
+3. text-align
+* left
+* right
+* center
+* justify: 마지막 라인을 제외하고 텍스트를 양쪽 끝으로 정렬한다

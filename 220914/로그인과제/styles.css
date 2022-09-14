@@ -1,0 +1,102 @@
+@font-face {
+    font-family: 'SpoqaHanSansNeo-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1, p, body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: 'SpoqaHanSansNeo-Regular'; 
+}
+
+.log-in-area {
+    padding: 19px 16px 18px;
+    width: 350px;
+    border: 1px solid #DBDBDB;
+    border-radius: 5px;
+}
+
+.blind {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
+p {
+    width: 215px;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.login-button {
+    margin: 16px 0;
+    position: relative;
+    transform:translateZ(0); /* 이미지 깨짐 문제 */
+    border-radius: 4px;
+    background-color: #711BFF;
+    display: block;
+    width: 318px;
+    height: 40px;
+    font-size: 12px;
+    color: #FFFFFF;
+    background-image: url(images/weniv-logo.png);
+    background-repeat: no-repeat;
+    background-size: 64px 18px;
+    background-position: 108px 10px;
+}
+
+.logo {
+    width: 64px;
+    height: 18px;
+}
+
+.login-text {
+    position: absolute;
+    left: 176px;
+    top: 13px;
+}
+
+.login-info {
+    height: 16px;
+    overflow: hidden;
+    margin-top: 16px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #767676;
+}
+
+.login-icon {
+    /* 이미지 깨짐 문제 */
+    image-rendering:-webkit-optimize-contrast;
+    transform:translateZ(0);
+    backface-visibility:hidden;
+
+    width: 16px;
+    vertical-align: bottom;
+}
+
+.find-idfw-area {
+    float: left;
+    vertical-align: middle;
+}
+
+.signup-area {
+    float: right;
+}

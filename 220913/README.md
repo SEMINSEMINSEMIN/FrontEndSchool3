@@ -96,7 +96,7 @@
 * center
 * justify: 마지막 라인을 제외하고 텍스트를 양쪽 끝으로 정렬한다
 * 세로 중앙 정렬 방법
-4. vertical-align
+4. [vertical-align](https://aboooks.tistory.com/171)
 * **인라인** 요소의 수직 정렬을 위해 사용하는 속성
 5. text-indent
 * 들여쓰기

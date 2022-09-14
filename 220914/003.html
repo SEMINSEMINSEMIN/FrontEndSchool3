@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>relative-absolute</title>
+  <style>
+
+  .box1{
+    z-index: 1;
+    position:relative;
+    top:40px;
+    background-color: green;
+    color:white;
+    width: 100px;
+    height: 100px;
+  }
+  .box2{
+    /* .box2는 .box3 밑에 있음 */
+    z-index: 1000;
+    position:absolute;
+    top: 40px;
+    background-color: red;
+    color:white;
+    width: 100px;
+    height: 100px;
+  }
+  .box3{
+    z-index: 2;
+    position: absolute;
+    /* position쓰고 top이나 left를 넣지 않으면 본래 있어야 할 위치에 있음 */
+    /* top과 left에 0을 주면, html에 딱 달라붙음 */
+    /* 근데 안 주면 body 내에 있음  */
+	top: 30px;
+    left: 30px;
+    background-color: blue;
+    color:white;
+    width: 100px;
+    height: 100px;
+  }
+  </style>
+</head>
+<body>
+  <!-- box3의 경우 위치 기준이 html -->
+  <div class="box3">box3</div>
+  <div class="box1">box1
+    <div class="box2">
+      box2
+    </div>
+  </div>
+</body>
+</html>

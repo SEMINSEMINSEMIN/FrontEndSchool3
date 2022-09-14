@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>텍스트 정렬</title>
+    <style>
+	  .text_center{
+        margin: 10px 0;
+        width: 400px;
+        height: 500px;
+        text-align: center;
+        background-color: greenyellow;
+        /* 아래 방법은 내용이 '두' 줄 이상일 때 통하지 않음 */
+        /* line-height: 500px; */
+      }
+      span {
+        display: inline-block;
+        background-color: pink;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      /* 버튼은 자동 수직, 수평 정렬됨 */
+      button {
+        height: 100px;
+        width: 200px;
+      }
+      </style>
+    </head>
+    <body>
+      <div class="text_center">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+      </div>
+      <div class="text_center">
+        <span>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+        </span>
+      </div>
+      <button type="button">button</button>
+    </body>
+</html>

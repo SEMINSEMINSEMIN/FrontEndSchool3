@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <style>
+        /* 스크롤이 없으면 sticky도 작동하지 않는다 */
+        /* 아래 주석을 풀면 sticky 작동 x */
+        /* section {
+            overflow: hidden;
+        } */
+        
+        section {
+            height: 1000px;
+            border: 3px solid black;
+        }
+
+        /* section에 달라붙음 */
+        h2 {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0px;
+            background: greenyellow;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>sticky test</h1>
+    <section>
+        <h2>오늘의 메뉴1</h2>
+        <ul>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab vero asperiores perspiciatis incidunt, inventore a deleniti, autem pariatur harum et odit illum ea consequuntur quae sequi tempore natus! Voluptates, obcaecati.</li>
+            <li>Quisquam consequatur porro, dicta distinctio atque explicabo aliquam quae, fugiat doloribus voluptatum aut totam obcaecati? Reiciendis, beatae ducimus. Quos quam blanditiis libero reprehenderit cum est mollitia fugiat cumque odio reiciendis.</li>
+            <li>Quod, consequatur labore quidem, placeat magni ex molestiae tempora magnam quibusdam ea ut vel iusto dolorum veritatis id totam ipsa eaque deleniti, neque atque numquam suscipit omnis. Beatae, illum ex?</li>
+        </ul>
+    </section>
+    <section>
+        <h2>오늘의 메뉴2</h2>
+        <ul>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni molestias esse libero? Modi, aliquam. Reprehenderit vel sapiente accusamus tempore sit fuga ratione, enim quis voluptates voluptatum, veritatis adipisci? Sed, odit!</li>
+            <li>Facere eveniet iure fugiat alias aspernatur assumenda reprehenderit inventore excepturi qui, aperiam suscipit possimus velit officia ducimus, debitis esse error eaque recusandae. Delectus doloribus harum deserunt, perferendis recusandae quidem quam!</li>
+            <li>Quam, exercitationem! Reprehenderit est perferendis a atque enim, et, consectetur possimus iusto, debitis vero facere amet? Inventore commodi optio vero at nesciunt perspiciatis deserunt voluptatum minus. Dolores totam maxime quos!</li>
+        </ul>
+    </section>
+    <section>
+        <h2>오늘의 메뉴3</h2>
+        <ul>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus fugiat, voluptas animi nam iste iusto est excepturi, vitae a, optio mollitia ullam labore in similique consectetur vel. Totam, aut iste!</li>
+            <li>Corrupti, velit corporis. Illum vero labore nesciunt iure eos, animi eveniet quam molestiae optio corporis vel itaque officiis odit asperiores adipisci placeat et aperiam numquam provident consectetur quidem quaerat! Cupiditate.</li>
+            <li>Optio ex nulla reprehenderit doloremque. Culpa molestias quasi et dicta dolore consectetur ea fugiat facilis officia quas, fugit labore in magnam accusamus eaque? Temporibus illum facilis, molestiae ipsum voluptates perferendis.</li>
+        </ul>
+    </section>
+</body>
+
+</html>

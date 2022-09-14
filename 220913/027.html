@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <style>
+        .container {
+            border: 1px solid black;
+            line-height: 1;
+        }
+        .one {
+            /* vertical-align: baseline; */
+            /* vertical-align: sub; */
+            /* vertical-align: sup; */
+            /* vertical-align: top; */
+            /* vertical-align: bottom; */
+            /* vertical-align: text-top; */
+            /* vertical-align: text-bottom; */
+            vertical-align: middle;
+            font-size: 10px;
+        }
+        .two {
+            font-size: 20px;
+        }
+        .three {
+            font-size: 40px;
+        }
+        img {
+            /* 아래 코드 주석 처리 시 이미지 하단에 여백이 남 */
+            /* vertical-align: top; */
+
+
+            /* 위 코드 주석 처리 후 아래 코드 입력시 이미지 하단 여백 사라짐 */
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        parent
+        <!-- 윗첨자 -->
+        <sub>hello</sub>
+        <!-- 아래첨자 -->
+        <sup>lions</sup>
+        <span class="one">Lorem ipsum</span>
+        <span class="two">dolor sit amet</span>
+        <span class="three">consectetur adipisicing</span>    
+    </div>
+    <div class="container">
+        <img width="100px" src="https://www.tvn-2.com/nacionales/Imagen-ilustrativa-gato-medio-bosque_18585331.jpg" alt="">
+    </div>
+</body>
+</html>

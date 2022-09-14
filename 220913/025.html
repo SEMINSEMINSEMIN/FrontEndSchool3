@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>텍스트 정렬</title>
+    <style>
+      .text_center{
+        text-align: center;
+      }
+      .text_left{
+        text-align: left;
+      }
+      .text_right{
+        text-align: right;
+      }
+	  .text_justify{
+        text-align: justify;
+        padding: 20px 0; /* 세로 중앙 정렬 */
+        background-color: greenyellow;
+      }
+      .inline_block {
+        display: inline-block;
+      }
+      </style>
+    </head>
+    <body>
+      <!-- 블록 레벨 요소 안의 인라인 요소에 적용됨 -->
+      <div class="text_left">
+        왼쪽 정렬
+      </div>
+      <!-- 블록 레벨 요소 안의 인라인 블록에 적용됨 -->
+      <div class ="text_right">
+        <p class="inline_block">오른쪽 정렬</p>
+      </div>
+      <!-- 상속 가능 -->
+      <div class="text_center">
+        <p>가운데 정렬</p>
+      </div>
+      <!-- 양쪽 정렬 -->
+      <div class="text_justify">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis aperiam dolores architecto aspernatur nesciunt, voluptatem vero quos animi numquam! Quam earum tempora facere natus veniam illo inventore ipsam, corporis culpa.
+      </div>
+    </body>
+</html>

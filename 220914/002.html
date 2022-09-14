@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>relative</title>
+  <style>
+  .box1{
+    position: static;
+    background-color: green;
+    color: white;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+  }
+  .box2{
+    position:relative;
+    left: 40px;
+    /* 아래 주석을 풀어도 box3의 레이아웃에 영향을 미치지 않음 */
+    /* top: 40px; */
+    background-color: red;
+    color:white;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+  }
+  .box4 {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    left: 40px;
+    position: relative
+  }
+  </style>
+</head>
+<body>
+  <div class="box1">box1</div>
+  <div class="box2">box2</div>
+  <div class="box1">box3</div>
+  <!-- 부모 박스 레이아웃에도 영향을 미치지 않음 -->
+  <div class="box1">
+    <div class="box4">box4</div>
+  </div>
+</body>
+</html>

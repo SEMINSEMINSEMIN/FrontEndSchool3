@@ -91,7 +91,20 @@
 1. [line-height](https://github.com/SEMINSEMINSEMIN/FrontendSchool3/blob/main/220913/022.html)
 2. [letter-spacing](https://github.com/SEMINSEMINSEMIN/FrontendSchool3/blob/main/220913/023.html)
 3. text-align
-* left
+* left: 디폴트
 * right
 * center
 * justify: 마지막 라인을 제외하고 텍스트를 양쪽 끝으로 정렬한다
+* 세로 중앙 정렬 방법
+4. vertical-align
+* **인라인** 요소의 수직 정렬을 위해 사용하는 속성
+5. text-indent
+* 들여쓰기
+6. text-decoration
+* 텍스트에 붙는 **라인**을 꾸며주는 속성
+* 스타일링의 용도로는 잘 사용하지 않음
+* 앵커 태크의 기본 스타일을 제거하기 위해 많이 쓰인다
+7. text-overflow
+* 부모 컨테이너를 넘너간 컨텐트가 어떻게 보여질지 결정하는 속성
+* clip
+* ellipsis

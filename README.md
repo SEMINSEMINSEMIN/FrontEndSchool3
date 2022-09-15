@@ -6,3 +6,11 @@
 * [220907](https://github.com/SEMINSEMINSEMIN/FrontendSchool3/tree/main/220907): Forms(HTML), CSS Syntax 및 적용 방법
 * [220908](https://github.com/SEMINSEMINSEMIN/FrontendSchool3/tree/main/220908): Reset CSS(CSS), 공백처리/주석/벤더프리픽스(CSS), CSS Selector(CSS), 선택자 우선순위(CSS), CSS Box Model(CSS), 1만 시간의 법칙 HTML 코드
 * 220909: [마진병합현상](https://www.youtube.com/watch?v=c19Mjg-ivxc) - 부모에 [overflow](https://www.youtube.com/watch?v=O-n1EjDEuIc): hidden;를 주면 독립적인 문서가 시작된다(block formatting context)
+---
+# CSS
+## 12. CSS Selector 심화
+1. 속성 선택자
+2. 가상 클래스 선택자
+3. 가상 요소 선택자
+## 13. CSS Combinator
+## 14. CSS Flex

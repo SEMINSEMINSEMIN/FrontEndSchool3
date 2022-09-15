@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            border: 1px solid black;
+            padding: 15px;
+            background-color: brown;
+            border-radius: 5px;
+            color: white;
+            transition: all .5s;
+        }
+        button:hover {
+            background-color: slateblue;
+            letter-spacing: 3px;
+        }
+        /* 클릭시 색깔 변경 */
+        a:active {
+            color: red;
+        }
+        /* input에 커서(탭)가 있을 때 보더 변경 */
+        input:focus {
+            border: 5px solid royalblue;
+        }
+        input:checked + label {
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <button>hello</button>
+    <a href="#">hello</a>
+    <form action="" method="get">
+        <input type="text">
+        <input type="text">
+    </form>
+    <input id="check" type="checkbox">
+    <label for="check">오늘 아침은 삼겹살입니다</label>
+</body>
+</html>

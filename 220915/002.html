@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 속성이름의 속성값 중에 변수를 하나의 완전한 단어로 포함하는 태그를 선택 */
+        /* 띄어쓰기 기준으로 */
+        div[class~="weniv"] {
+            color: blue;
+        }
+        /* div[data~="weniv"] {
+            color: black;
+        } */
+
+        /* div.weniv {
+            color: pink;
+        } */
+    </style>
+</head>
+<body>
+    <div class="weniv">hello world</div> <!-- 파란색 -->
+    <div class="wenivs">hello world</div>
+    <div class="weniv a">hello world</div> <!-- 파란색 -->
+</body>
+</html>

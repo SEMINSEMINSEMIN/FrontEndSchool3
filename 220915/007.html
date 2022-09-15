@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 0부터 시작하지 않는다 */
+        /* div:nth-child(1){
+            background-color: red;
+        } */
+
+        /* 근데 n은 0부터 시작한다.. */
+        /* 모두 선택 */
+        /* div:nth-child(n) {
+            background-color: red;
+        } */
+
+        /* 짝수 선택 */
+        /* 색깔 번갈아 넣는 경우(예를 들어 테이블) */
+        /* div:nth-child(2n) {
+            background-color: red;
+        } */
+
+        /* 홀수 선택 */
+        /* div:nth-child(2n+1) {
+            background-color: red;
+        } */
+
+        /* odd, even 키워드 사용 가능 */
+        /* div:nth-child(odd) {
+            background-color: red;
+        } */
+
+        /* 접속한 링크 스타일 변경, 개인정보 보호를 위해 제한적으로 사용해야 한다 */
+        /* a:visited {
+            color: red;
+        } */
+
+        /* 부정 가상 선택자, 최근에 만들어짐 */
+        /* 실무에서 잘 쓰지 못할 가능성 높음.. */
+        li:not(.one){ color: red;}
+    </style>
+</head>
+<body>
+    <ul>
+        <li>hello world</li> <!--얘한테도 빨강 적용됨-->
+    </ul>
+    <div>hello</div>
+    <div>hello</div>
+    <div>hello</div>
+    <div>hello</div>
+    <a href="https://paullab.co.kr">link</a>
+    <ul>
+        <li>hello world</li>
+        <li>hello world</li>
+        <li class="one">hello world</li> <!--얘 제외 모든 li에 빨강-->
+        <li>hello world</li>
+        <li>hello world</li>
+    </ul>
+</body>
+</html>

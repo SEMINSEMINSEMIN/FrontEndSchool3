@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 속성이름 class에 해당되는 속성을 가진 'div' 모두 선택 */
+        div[class] {
+	        font-size: 10px;
+        }
+
+        /* 속성이름의 속성값이 변수와 일치하는 태그 선택 */
+        a[href="http://www.paullab.co.kr"] {
+            font-size: 32px;
+        }
+    </style>
+</head>
+<body>
+    <div>hello world1</div>
+
+    <!-- 얘한테 폰트 사이즈 10px이 적용됨 -->
+    <div class="one">hello world2</div>
+
+    <p class="two">this is a paragraph</p>
+
+    <a href="">링크1</a>
+
+    <!-- 얘한테 폰트 사이즈 32px이 적용됨 -->
+    <a href="http://www.paullab.co.kr">링크2</a>
+</body>
+</html>

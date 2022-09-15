@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        * : 전체
+        ^ : 시작, 반대
+        $ : 끝 
+        */
+
+        /* 속성 의 속성값이 변수 로 시작하는 태그를 선택 */
+        a[href^="https"] {
+            color: red;
+        }
+
+        /* 속성 의 속성값이 변수 로 끝나는 요소를 선택 */
+        a[href$="kr"]{
+            color: green;
+        }
+        a[href$=".png"]{
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <!-- 초록색 -->
+    <a href="http://www.paullab.co.kr">위니브</a>
+    <!-- 빨간색 -->
+    <a href="https://www.paullab.co.com">유튜브</a>
+    <!-- 보라색 -->
+    <a href="https://velog.velcdn.com/images/raontt2285/post/18bee7ef-e66c-4e47-a560-980296c399a9/image.png">이미지</a>
+</body>
+</html>

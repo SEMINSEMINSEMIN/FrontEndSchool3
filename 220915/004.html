@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 속성 의 속성값이 변수 를 포함하는 태그를 선택 */
+        /* 띄어쓰기 기준 x, 그냥 그 문자를 포함하기만 하면 됨 */
+        a[href*="weniv"] {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- 페이지가 리프레쉬는 안 되고 상단으로 올라감 -->
+    <a href="#">눌러!</a>
+
+    <a href="weniv">눌러!</a>
+    <a href="wenivs">눌러!</a>
+    <a href="we weniv">눌러!</a>
+    <a href="we weniv we">눌러!</a>
+    <a href="weawenivawe">눌러!</a>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* ::before, ::after를 화면리더기가 익스프로러를 제외하고 읽는다. 모바일의 경우 모두 읽는다 */
+        p::before {
+            display: block;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            content:"";
+        }
+
+        p::after {
+            content: "만원";
+        }
+    </style>
+</head>
+<body>
+    <p>1000</p>
+</body>
+</html>

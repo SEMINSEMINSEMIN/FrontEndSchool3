@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* class="foo"인 엘리먼트 중 첫번째 자식인 엘리먼트를 선택 */
+        .foo:first-child {
+            background-color: blue;
+        }
+
+        /* class="foo"인 엘리먼트 중 마지막 자식인 엘리먼트를 선택 */
+        .foo:last-child {
+            background-color: red;
+        }
+
+        /* div 주석 풀고 아래 코드 적용시 1에 배경색으로 파란색 적용됨 */
+        /* .foo:nth-child(2) {
+            background-color: blue;;
+        } */
+    </style>
+</head>
+<body>
+    <!-- 
+        가상 클래스 선택자: 클래스가 없는데 있는것처럼 처리(콜론이 하나)
+        가상 요소 선택자: 요소가 없는데 있는 것처럼 처리(콜론이 두개)
+    -->
+    <ul>
+        <!-- div가 있으면 1에 파란색이 적용이 안됨 -->
+        <!-- <div>hello</div> -->
+
+        <li class="foo">1</li>
+        <li class="foo">2</li>
+        <li class="foo">3</li>
+        <li class="foo">4</li>
+        <li class="foo">5</li>
+    </ul>
+</body>
+</html>

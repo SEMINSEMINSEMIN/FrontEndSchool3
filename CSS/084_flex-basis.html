@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            /* 1. */
+            /* flex-direction: column; */
+
+            /* 4. 넓이를 다 포함하지 못할 때에는 개행한다. */
+            flex-wrap: wrap;
+        }
+        
+        .item {
+            background-color: aqua;
+            border: 1px solid black;
+        }
+
+        .item:nth-child(2) {
+            /* 1. 주 축에 따라 basis가 넓이가 되기도 하고, 높이가 되기도 한다. */
+            /* 주 축이 row일 때는 너비 */
+            /* 주 축이 column일 때는 높이 */
+            /* flex-basis: 150px; */
+
+            /* 2. 2개의 값이 있을 때 basis의 값을 우선한다. */
+            /* flex-basis: 150px; */
+            /* width: 100px; */
+
+            /* 3. width의 값은 넓이를 강제한다 */
+            /* width: 100px; */
+
+            /* 4. 컨텐츠의 너비가 flex-basis보다 커지면 컨텐츠의 크기만큼 basis도 같이 커진다 */
+            flex-basis: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <!-- 3. overflow -->
+        <!-- 4. overflow 되지 않음 -->
+        <div class="item">2222222222222</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+</body>
+</html>

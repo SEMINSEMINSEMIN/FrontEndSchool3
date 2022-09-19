@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .item {
+            border: 1px solid black;
+        }
+
+        /* 이거 많이 사용함 */
+        /* 접근성 */
+        /* 숫자는 크기에 따라서만 정렬이다. 순서가 아니다. */
+        /* 크기가 큰 것만 뒤로 간다. 아래의 경우 3번째 child가 맨 뒤로 간다 */
+        .card {
+            display: flex;
+            flex-direction: column;
+        }
+        .date {
+                order: -1;
+                text-align: right;
+            }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="card">
+            <h3>News item title</h3>
+            <div class="date">1 Nov 2017</div>
+            <p>This is the content of my news item. Very newsworthy.</p>
+        </div>
+        <div class="card">
+            <h3>Another title</h3>
+            <div class="date">6 Nov 2017</div>
+            <p>This is the content of my news item. Very newsworthy.</p>
+        </div>
+    </div>
+</body>
+</html>

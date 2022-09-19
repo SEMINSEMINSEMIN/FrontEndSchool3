@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+  @keyframes hojun {
+    from{
+      background-position: 0px, 0px;
+    }
+    to {
+        /* 이미지 전체의 너비는 3842이지만, 마지막 이미지가 브라우저에 남아있게 하기위해 -3730px */
+      background-position: -3730px, 0;
+    }
+  }
+  .building1 {
+    /* 디자이너랑 협업시 프레임 수 잘 결정해야 함 */
+    /* 30개 이하면 예쁘게 보이지 않는다 */
+    width: 110px;
+    height: 180px;
+    background: url(./building/building1.png) no-repeat;
+    /* 33step를 딱딱딱 옆으로 밀면서 */
+    animation: hojun 5s steps(33);
+    /* 애니메이션이 끝난 후의 상태 */
+    /* 애니메이션이 끝난 후 그 지점에 그대로 있음 */
+    animation-fill-mode: forwards;
+    /* 애니메이션이 끝난 후 시작점으로 돌아옴 */
+    /* animation-fill-mode: backwards; */
+  }
+  </style>
+</head>
+<body>
+  <div class="building1"></div>
+</body>
+</html>

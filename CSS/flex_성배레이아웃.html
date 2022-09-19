@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            background-color: blue;
+        }
+
+        header {
+            margin: 10px;
+            background-color: aqua;
+            height: 100px;
+        }
+
+        main {
+            margin: 10px;
+            display: flex;
+            gap: 20px;
+        }
+
+        section {
+            flex: 3 1 0;
+            background-color: pink;
+        }
+
+        aside {
+            flex: 1 0 50px; 
+            background-color: yellowgreen;
+        }
+
+        footer {
+            margin: 10px;
+            background-color: red;
+            height: 100px;
+        }
+
+        @media screen and (max-width: 600px) {
+            main {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        header
+    </header>
+    <main>
+        <section>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores quasi quisquam modi nihil, amet assumenda culpa ducimus quae similique tenetur minus beatae repellat natus quia exercitationem facilis et autem. Eos?
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores quasi quisquam modi nihil, amet assumenda culpa ducimus quae similique tenetur minus beatae repellat natus quia exercitationem facilis et autem. Eos?
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores quasi quisquam modi nihil, amet assumenda culpa ducimus quae similique tenetur minus beatae repellat natus quia exercitationem facilis et autem. Eos?
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores quasi quisquam modi nihil, amet assumenda culpa ducimus quae similique tenetur minus beatae repellat natus quia exercitationem facilis et autem. Eos?
+        </section>
+        <aside>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est nisi minus totam deserunt. Eveniet voluptas sunt dolorum alias at quas modi non soluta, quos ratione aliquam, quidem, sequi velit! Ad.
+            Eveniet numquam praesentium perferendis quam ducimus nobis, provident similique animi vitae veniam, officiis natus sunt tenetur magnam minus soluta iusto itaque odit atque dolor placeat vel dolores veritatis suscipit. Quam.
+        </aside>
+    </main>
+    <footer>
+        footer
+    </footer>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        h1 {
+            /* flex-shrink: 0; */
+            /* h1이 500px 미만으로 줄어들지 않도록(가로로 스크롤이 생기더라도) */
+            flex: 1 0 500px;
+        }
+
+        nav {
+            /* flex-basis: 350px; */
+            /* nav가 500px 미만으로 줄어들지 않도록(가로로 스크롤이 생기더라도) */
+            flex: 1 0 500px;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100%;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        li {
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Jeju On Coding</h1>
+        <nav>
+            <ul>
+                <li>SERVICES</li>
+                <li>PORTPOLIO</li>
+                <li>HISTORY</li>
+                <li>TEAM</li>
+                <li>CONTACT</li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

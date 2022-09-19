@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        @keyframes hojun {
+            0% {
+                transform: translate(0, 0);
+            }
+
+            25% {
+                transform: translate(500px, 0);
+            }
+
+            50% {
+                transform: translate(500px, 500px) rotate(360deg) scale(2);
+            }
+
+            75% {
+                transform: translate(0, 500px);
+            }
+
+            100% {
+                transform: translate(0, 0)
+            }
+        }
+
+        @keyframes semin {
+            0% {
+                background-color: blueviolet;
+            }
+
+            50% {
+                background-color: aqua;
+            }
+
+            100% {
+                background-color: blueviolet;
+            }
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: blueviolet;
+            /* animation: hojun 2s; */
+            /* 여러 개의 animation-name 나열 */    
+            animation-name: hojun, semin;
+            animation-duration: 2s;
+
+            /* 3번 반복 */
+            /* animation-iteration-count: 3; */
+            /* 무한히 반복 */
+            animation-iteration-count: infinite;
+            /* 역방향 */
+            /* animation-direction: reverse; */
+            /* 순방향-역방향 번갈아 재생, 실행 횟수가 홀수일 때는 순방향으로, 짝수 일 때는 역방향으로 */
+            /* animation-direction: alternate; */
+            /* 역방향-순방향 번갈아 재생, alternate의 반대 */
+            /* animation-direction: alternate-reverse; */
+            animation-timing-function: ease;
+            /* animation-delay: 3s; */
+        }
+    </style>
+</head>
+<body>
+    <div class="box">hello</div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        .container {
+            display: flex;
+        }
+        .item {
+            /* flex-grow: 1; */
+            /* flex-grow 디폴트는 0, 더 늘어나지 않음 */
+            /* flex-shrink 디폴트는 1, 줄어들 수 있음 */
+            width: 100px;
+            height: 50px;
+            background-color: aqua;
+            border: 1px solid black;
+        }
+
+        .item:nth-child(2) {
+            background-color: red;
+            flex: 2 300px;
+
+            /* 2번째 아이템의 너비는 컨테이너 너비가 아무리 줄어들어도 200px 미만으로 되지 않는다. 단, 컨테이너 너비가 늘어날 경우 200px보다 너비가 커진다. */
+            flex: 1 0 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+</body>
+</html>

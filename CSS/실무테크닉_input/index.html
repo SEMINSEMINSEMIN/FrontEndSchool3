@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        .txt-hide {
+            position: absolute;
+            clip: rect(0, 0, 0, 0);
+            width: 1px;
+            height: 1px;
+            margin: -1px;
+            overflow: hidden;
+        } 
+
+        .labl-hold::before {
+            display: inline-block;
+            content: '';
+            /* 컨텐츠에 이미지를 넣어버리면 이미지라고 스크린리더가 읽음 */
+            /* 접근성을 감안하면 컨텐츠보다는 백그라운드에 넣는게 나음 */
+            /* content: url("images/icon_check_empty.png") */
+            width: 22px;
+            height: 22px;
+            vertical-align: -5px;
+            background-image: url("images/icon_check_empty.png");
+        }
+
+        .inp-hold:checked+.labl-hold::before {
+            background-image: url("images/icon_check.png");
+        }
+
+        .inp-hold:focus+.labl-hold::before {
+            outline: 2px solid #000;
+            border-radius: 50%;
+            outline-offset: 5px;
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="inpHold" class="inp-hold txt-hide">
+    <label for="inpHold" class="labl-hold">선택하세요</label>
+</body>
+</html>

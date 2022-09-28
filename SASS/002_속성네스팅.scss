@@ -1,0 +1,9 @@
+.add-icon {
+    // 속성을 중첩할 때는 콜론을 사용한다
+    background : {
+        image: url("./assets/arrow-right-solid.svg");
+        position: center center;
+        repeat: no-repeat;
+        size: 14px 14px;
+    }
+}

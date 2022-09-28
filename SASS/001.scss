@@ -1,0 +1,51 @@
+// 한 줄 주석
+/* 여러줄 주석 */
+ul {
+    li {
+        color: red;
+        font-size: 10px;
+    }
+}
+
+.one {
+    color: red;
+    .two {
+        color: green;
+        .three {
+            color: blue;
+        }
+        
+        .four {
+            color: black;
+        }
+    }
+}
+
+.one_ {
+    color: red;
+}
+
+.two_ {
+    color: green;
+    .three_ {
+        color: blue;
+    }
+    .four_ {
+        color: black;
+    }
+}
+
+nav {
+	background : #C39BD3;
+	padding : 10px;
+	height: 50px;
+	ul {
+		display: flex;
+		list-style : none;
+		justify-content: flex-end;
+		li {
+			color: white;
+			margin-right: 10px;
+		} 
+	}
+}

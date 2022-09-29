@@ -1,0 +1,19 @@
+// 파선아실
+// 물데네전세표응
+// 믹스인은 보통 파일을 따로 만들어 작성한다
+
+@mixin center-xy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    @include center-xy;
+    background: gray;
+}
+
+.aside {
+    @include center-xy;
+    background: white;
+}

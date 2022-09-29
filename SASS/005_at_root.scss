@@ -1,0 +1,11 @@
+.one {
+    background: yellow;
+    .two {
+        font-size: 20px;
+        @at-root .three {
+            display:flex;
+        }
+    }
+}
+// three가 네스팅 되어 있음에도 불구하고 빠져나와 있음
+// 부모에 상속되지 않는다

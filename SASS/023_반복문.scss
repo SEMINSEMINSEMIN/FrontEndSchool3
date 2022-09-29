@@ -1,0 +1,18 @@
+@for $i from 1 through 3 {
+    .photo-box:nth-child(#{$i}) {
+        background-image: url("../assets/phoster#{$i}.png");
+    }
+}
+
+@for $hojun from 1 through 3 {
+    .profile:nth-child(#{$hojun}) {
+        background-image: url("../assets/profile#{$hojun}.png");
+    }
+}
+
+@for $hojun from 1 through 3 {
+    .profile-#{$hojun} {
+        background-color: red;
+        font-size: #{$hojun * 10}px;
+    }
+}

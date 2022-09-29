@@ -1,0 +1,22 @@
+// 파선아실
+// 파라미터는 선언할 때 한다. 아규먼트는 실제로 쓴다
+// $ul: 파라미터
+@mixin image-style($ul, $size, $repeat, $positionX : 50%, $positionY : 50%) {
+    background-image: url($ul);
+    background-size: $size;
+    background-repeat: $repeat;
+    background-position: $positionX $positionY;
+  }
+  
+//  ./assets/user.jpg -> 아규먼트
+  .profile {
+    @include image-style("./assets/user.jpg", cover, no-repeat);
+  }
+
+  .profile2 {
+    @include image-style("./assets/user.jpg", cover, no-repeat, 30%);
+  }
+
+  .profile3 {
+    @include image-style("./assets/user.jpg", cover, no-repeat, 30%, 30%);
+  }

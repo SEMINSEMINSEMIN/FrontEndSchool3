@@ -1,0 +1,43 @@
+@function sigma($number) {
+    $result: 0;
+
+    @for $i from 1 to $number {
+        $result: $result + $i;
+    }
+
+    @return $result;
+}
+
+.one {
+    width: sigma(10)px;
+}
+
+// @function sigma($number) {
+//     $result: 0;
+
+//     @for $i from 1 to $number {
+//         $result: #{$result + $i}; 
+            // #이 들어간 공간을 통째로 문자열 처리
+            //초기값 인식 x
+//     }
+
+//     @return $result;
+// }
+
+// .one {
+//     width: sigma(11)px;
+// }
+
+// @function sigma($number) {
+//     $result: 0;
+
+//     @for $i from 1 to $number {
+//         $result: #{$result} + $i; // 문자열 처리, 초기값 0 인식
+//     }
+
+//     @return $result;
+// }
+
+// .one {
+//     width: sigma(11)px;
+// }

@@ -1,0 +1,59 @@
+.one {
+    font-size: 10px + 10px;
+}
+
+.two {
+    font-size: 10px - 10px;
+}
+
+// 10px/10px
+// .three {
+//     font-size: 10px / 10px;
+// }
+
+//10px/10
+// .three {
+//     font-size: 10px / 10;
+// }
+
+// 괄호가 있어야 한다.
+.three {
+    font-size: (10px / 10);
+}
+
+// 1
+// .three {
+//     font-size: (10px / 10px);
+// }
+
+// 에러
+// .four {
+//     font-size: 10px * 10px;
+// }
+// 에러
+// .four {
+//     font-size: (10px * 10px);
+// }
+.four {
+    font-size: 10px * 10;
+}
+
+// 에러
+// .five {
+//     font-size: 10px ** 10px;
+// }
+
+
+// 곱하기와 나누기와는 다르게 2개의 단위가 모두 있어도 에러가 나지 않는다
+// 앞의 값으로 반환
+// .six {
+//     font-size: 10px % 3px;
+// }
+
+.six {
+    font-size: 3in % 10px;
+}
+
+.seven {
+    font-size: 10px % 3;
+}

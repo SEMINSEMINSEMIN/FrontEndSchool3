@@ -1,0 +1,37 @@
+@debug 10s + 15s; // 25s
+@debug 15px - 10px; // 0.8958333333in
+// @debug 1px * 1em; 에러
+
+.one {
+    font-size: 15px - 10px;
+}
+
+// 에러
+// .two {
+//     font-size: 15px - 13m;
+// }
+
+.three {
+    font-size: 1in - 15px;
+}
+
+.four {
+    font-size: 1cm - 15px;
+}
+
+.five {
+    font-size: 1 - 20px;
+}
+
+.six {
+    font-size: 15px - 15;
+}
+
+// 에러
+// .seven {
+//     font-size: 100% - 1px;
+// }
+
+.test {
+    width: calc(100% - 80px);
+}

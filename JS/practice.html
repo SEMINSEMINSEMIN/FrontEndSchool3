@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <button onclick="getinnerHTML()">
+        innerHTML
+    </button>
+    <button onclick="getinnerText()">
+        innerText
+    </button>
+    <button onclick="gettextContent()">
+        textContent
+    </button>
+    <section id="content">
+        <p>Hello</p>
+        <p><strong>Hello</strong> World</p>
+        <p style="display:none;">You <strong>cannot</strong> see this text.</p>
+    </section>
+    <script>
+        function getinnerHTML() {
+        const element = document.getElementById('content').innerHTML;
+        window.alert(element);
+        }
+
+        function getinnerText() {
+        const element = document.getElementById('content').innerText;
+        window.alert(element);
+        }
+
+        function gettextContent() {
+        const element =             document.getElementById('content').textContent;
+        window.alert(element);
+        }
+    </script>
+</body>
+</html>

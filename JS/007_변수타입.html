@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <script>
+        console.log(typeof 'hello world')   // String // (V)
+        console.log(typeof 100)         // Number // (V)
+        console.log(typeof NaN)          // Number
+        console.log(typeof true)         // boolean // (V)
+        console.log(typeof undefined)      // undefined // (V)
+        console.log(typeof Symbol())       // symbol
+        console.log(typeof null)         // object, 여기서부터 js가 어려워 집니다.
+        console.log(typeof [])         // object, 여기서부터 js가 어려워 집니다. 왜 Array가 아닐까요?
+        console.log(typeof {})        // object
+        console.log(typeof function () {}) // function
+        console.log(typeof /정규표현식/gi)  // object
+
+        console.log('---------');
+        console.log(10 + 10);
+        console.log('10' + 10); // 1010 (문자열)
+        console.log('10' + '10'); // 1010 (문자열)
+        console.log(10 + '10'); // 1010 (문자열)
+        console.log("---------");
+
+        console.log(Number("10") + Number("10")); 
+        // 형변환은 형태를 변경하는, 타입을 변경하는 것
+        // 형변환, 20, 권장 X
+        // 형변환시 parseInt 권장
+        console.log(parseInt("10") + parseInt("10"));
+        // Object.prototype.toString.call(데이터).slice(8, -1);
+        // 로 확실하게 알 수 있습니다.
+        // 문자열로 형변환, 권장 X
+        console.log(String(10) + String(10)); // 1010
+    </script>
+</body>
+</html>

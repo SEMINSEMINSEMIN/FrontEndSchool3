@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <script>
+        // 변수 선언 방법 x
+        // 변수로 가져올 수 있는 값
+        let x = 10;
+        let y = 100;
+        x = 15;
+        console.log(x + y);
+
+        // 한글(대부분 권장하지 않음. 호준님은 권장하심)
+        let 호준 = 100;
+        console.log(호준 + 호준);
+
+        // 숫자로 시작 (x)
+        // let 10 = 100;
+        // let 1a = 100;
+
+        // 문자(대소문자 구별)
+        // 참고: 아스키 코드에서 대소문자는 16진수가 다름
+        let abc = 100;
+        let Abc = 200;
+        let aBc = 300;
+
+        // 특수문자
+        /* 
+        변수이름은 $, _ 를 제외한 공백, 특수문자, 구두점(글의 여러 가지 경계를 구분하기 위해 사용되는 반점(,), 온점(.), 물음표(?) 등등…)을 사용할 수 없습니다.
+        */
+        // 아래 두 개처럼 쓰지마셈
+        // let $_$ = 548;
+        // let $,_ = 10;
+
+        let _ = 100; // 반복문 돌 때 의미 없는 변수에 사용
+
+        /*
+        변수는 let, const, var, if, else 이런 지정된 키워드로 사용하지 않는다
+        */
+    </script>
+</body>
+</html>

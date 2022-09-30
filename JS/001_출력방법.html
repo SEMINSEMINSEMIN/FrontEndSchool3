@@ -1,0 +1,33 @@
+<!-- 출력하는 방법 -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <!-- <script></script> -->
+</head>
+<body>
+    <!-- <script></script> -->
+    <p id="one"></p>
+    <script>
+        /* about:blank에서 개발자 도구 열고, console에서 document. 이라고 치면 여러가지 document 메서드를 볼 수 있다 */
+        document.getElementById('one').innerHTML = 
+        "hello <strong>world 1</strong>";
+        /* 콘솔에 로그를 찍겠다: 콘솔이라는게 꼭 브라우저 개발자 콘솔를 말하는게 아님. 노드의 경우 컴퓨터 콘솔에 찍힘 */
+        console.log("hello world 2");
+        window.alert("hello world 3");
+        document.write('hello world 4');
+    </script>
+</body>
+</html>
+
+<!-- script 위치가 중요함: 변수 범위의 침해 -->
+<!-- 함수 vs 메서드 -->
+<!-- 메서드: 클래스 안에 포함된거 -->
+<!-- 
+콘솔
+브라우저: 브라우저 개발자 도구
+node: 터미널
+-->

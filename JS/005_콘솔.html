@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <script>
+        console.log("hello");
+
+        let data = {
+            a: 10,
+            c: 100,
+            b: 3,
+        }
+        // 알파벳순
+        // 요소들과 그 안의 값, 그리고 거기서 사용할 수 있는거 출력
+        console.dir(data);
+
+        // 순회를 돌았을 때는 순서 보장
+        // for (const d in data) {
+        //     console.log(d);
+        // }
+
+        let data2 = [10, 20, 30];
+        console.dir(data2);
+        
+        // 검은색 맞고, 제코배 개발자분들은 Info를 안 쓰신다고 한다
+        // console.info('information');
+
+        console.group("one");
+        console.log("호준/팀원");
+        console.log("유정/팀원");
+        console.log("혜연/팀원");
+        console.groupEnd();
+        console.group("two");
+        console.log("태수/팀장");
+        console.log("슬기/팀장");
+        console.groupEnd();
+
+        console.table(data);
+        
+        console.error("error");
+        console.error("정신차렷!");
+
+        console.warn("실행은 해줄게, 다만 경고문구는 읽어봐");
+        
+        // 아래 코드는 거의 안 씀
+        // 내가 내 코드를 확인하기 위해서 많이 씀
+        console.log("%chello world", "color: red; font-size: 32px;")
+    </script>
+</body>
+</html>

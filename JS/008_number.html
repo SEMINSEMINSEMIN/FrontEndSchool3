@@ -56,7 +56,7 @@
         console.log(Math.max(data)); // NaN(숫자가 아니라 배열을 받은거니까)
         console.log(Math.max(...data)); // spread
 
-        // 반올림, cell(올림), floor(내림)
+        // 반올림, ceil(올림), floor(내림)
         console.log(Math.round(4.7));
         console.log(Math.round(4.4));
 
@@ -74,6 +74,17 @@
         // 업로드 용량 제한시
         console.log(BigInt(123123123123123123123123123123n) + BigInt(2n));
 
+        // JS에서 큰 숫자를 사용할 때에는 BigInt를 사용합니다.
+            // The proposal belongs to ECMAScript 2020, which is the 11th edition
+            // console.log(Number.MAX_SAFE_INTEGER)  // 2^53 - 1
+            // BigInt(12312312312312312312) + BigInt(2) // 제대로 작동하지 않음
+            // BigInt(Number.MAX_SAFE_INTEGER)
+            // BigInt(Number.MAX_SAFE_INTEGER) + 1000n // 제대로 작동(숫자 자체가 MAX_SAFE_INTEGER를 넘어가면 제대로 표현하지 못함)
+            // BigInt(5) + 5n
+            // BigInt(5) + 5 // error
+            // BigInt(5) / 2n // 2n (소수 표현 안됨)
+            // BigInt("10") + BigInt("10") // 큰 값을 정수로 입력받을 때에는 string으로 처리해서 받아야 함
+
         /*
             정보처리기사
             1bit = 0과 1을 표현할 수 있는 최소 단위
@@ -86,6 +97,12 @@
             1024GB = 1TB
             (KB,MB,GB,TB,PB)갈매기털빼
         */
+
+        let one = 10;
+        console.log(one.toString()); // 문자열 10 반환
+        // 아래 코드는 에러. 소수점 때문에
+        // 10. 이것을 소수점으로 판단한다.
+        // console.log(10.toString()); 
     </script>
 </body>
 </html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <script>
+        let data = [10, 20, 30];
+        console.log(data.length);
+        let data2 = new Array(5);
+        console.log(data2);
+        let data3 = new Array("사과", "수박", "복숭아", "딸기", "복숭아", "바나나");
+        console.log(data3);
+        console.log(data3.splice(3, 1));
+        // data3.splice(3); 3번 인덱스부터 전부 삭제
+        console.log(data3);
+
+        // 아이템 추가
+        data.splice(3, 0, "한라봉");
+        console.log(data3);
+
+        data.splice(3, 1, "제주감귤");
+        console.log(data3);
+        
+        data.splice(3, 0, ['포도', '체리']);
+        console.log(data3);
+
+        let fish = ['정어리', '고등어', '돌고래', '참치', '고래상어', '코끼리'];
+        // fish.splice(fish.length - 1);
+        // console.log(fish);
+        // fish.splice(4, 0, "다금바리");
+        // console.log(fish);
+        // fish.splice(2, 1, "옥돔", "갈치");
+        // console.log(fish);
+
+        // 1. splice 를 이용해 코끼리를 제거해보세요.
+        // 2. 참치 다음에 다금바리를 추가해보세요.
+        // 3. 돌고래를 제거하고 옥돔과 갈치를 추가해보세요.
+        fish.splice(2, 1, ...['옥돔', '갈치']);
+    </script>
+</body>
+</html>

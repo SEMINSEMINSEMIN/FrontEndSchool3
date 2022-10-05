@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <script>
+        let couponlist = ['9b5fcc7', '9b5fcc72', '9b5fcc73'];
+        user = [{
+            userid : 1,
+            username : 'hojun',
+            coupon : couponlist[0],
+            쿠폰사용가능여부 : !!couponlist[0]
+        }]
+        // true : 1
+        // false : 0
+        // and(&&): 곱
+        // or(||): 합
+        // not(!): 부정
+
+        // 단락평가
+        console.log(true || false); // true
+        console.log(true || true); // true
+        console.log(true && false); // false
+        console.log(!false); // true
+        console.log(!!false); // false, 실무에서 많이 사용함
+        console.log(""); // typeof > string
+        console.log(!!""); // typeof > boolean으로 변경, false
+
+        console.log(!![]); // true (JS)
+        console.log(Boolean([])); // true (JS)
+
+        console.log('--------');
+        console.log([] && 'hi');
+        console.log('confuse_1');
+        console.log('false' == false); // false
+        console.log(!'false'); // false
+        console.log(!'0'); // false
+        console.log('abc' / 1); // NaN
+        console.log(!NaN); // true
+        console.log(!null); // true
+        console.log(!undefined); // true
+
+        // 단락평가(간단한 코드에서 권고)
+        // 이런 프로세스이지 동일한 코드를 사용하는 건 아니다
+        // username도 입력하고 pw도 입력할 때만 회원가입성공여부가 true, false가 나오게
+        username = '';
+        pw = '';
+        username = !!username && !!pw;
+        // username = !!(username && pw);
+        // username = !(!username || !pw); // 드모르간의 법칙
+        // username && pw ? true : false; // 3항 연산자 사용
+        console.log(username);
+        
+        // // false라서 뒤에 거를 읽어야 할 필요가 있음
+        // console.log(username); // 이름을 입력하지 않으신 분
+        // 논리 연산의 반환값은 항상 true나 false가 아닙니다.
+
+        // username1 = 'abc';
+        // username1 = username1 || '이름을 입력하지 않으신 분';
+        // // true라서 뒤에 거를 읽어야 할 필요가 없음
+        // console.log(username1); // abc
+
+        // username2 = '';
+        // username2 = username2 || false;
+        // console.log(username1); // false
+
+        // username2 = '';
+        // username2 = username2 || false;
+        // console.log(username1); // 0
+
+        // 알고리즘 문제
+        let s = 0;
+        for (let i = 0; i < 100; i++) {
+            if (i % 3 == 0 || i % 5 == 0) {
+                s += i;
+            }
+        }
+        console.log(s);
+    </script>
+</body>
+</html>

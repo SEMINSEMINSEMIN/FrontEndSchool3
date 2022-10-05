@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <script>
+        // array
+        // 값의 변경이 가능하다
+        // 대부분 동일한 자료의 형태가 반복된다
+        let 과일 = ['사과', '수박', '복숭아', '딸기', '바나나'];
+        console.log(과일[1]);
+        let 꺼낸과일 = 과일.pop();
+        console.log(과일);
+        과일.push('멜론');
+        console.log(과일);
+
+        function sum(x, y) {
+            return x + y;
+        }
+
+        let test = [1, 2, 3];
+
+        let obj = {
+            'one' : 1,
+            'two' : 2
+        }
+
+        let data = [console.log, sum, test, obj];
+        data[0]('hello world');
+        console.log(data[2][1]);
+
+        // 0. matrix에서 값 찾기
+        let array = [
+            [1, 2, 3],
+            [4, 5, 6], 
+            [7, 8, 9]
+        ]
+
+        console.log(array[1][2]); // 6
+
+        let testalgo = [
+            [0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0, 0, 0],
+            [7, 0, 0, 0, 0, 0, 0, 0],
+            [7, 0, 0, 0, 0, 0, 0, 0],
+            [7, 0, 0, 0, 0, 0, 0, 0],
+        ];
+
+        testalgo[4][0] == testalgo[3][0] == testalgo[2][0];
+        // 1차원으로 펼치고 8의 배수인 인덱스 비교
+        // testalgo[16] == testalgo[24] == testalgo[32];
+    </script>
+</body>
+</html>

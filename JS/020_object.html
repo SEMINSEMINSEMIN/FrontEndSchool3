@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <script>
+        let newuser = {
+            id : 'hojun',
+            pw : '1234', // 사실 암호화해서 저장해야 함(MD5)
+            name : 'Semin',
+            email : 'ksm9802@gmail.com',
+            active : true,
+        }
+
+        console.log(newuser['id']);
+        // console.log(newuser[id]); 에러
+        console.log(newuser.id);
+        // console.log(newuser."id"); 에러
+
+        let user = [
+                {
+                    //key : value
+                    id: "licat",
+                    pw: "1234", // 81DC9BDB52D04DC20036DBD8313ED055 이렇게 저장합니다. ("MD5는 사용하지 않습니다.")
+                    name: "leehojun",
+                    email: "paul@weniv.com",
+                    active: true,
+                },
+                {
+                    //key : value
+                    id: "lion",
+                    pw: "2345", // 81DC9BDB52D04DC20036DBD8313ED055 이렇게 저장합니다. ("MD5는 사용하지 않습니다.")
+                    name: "leehojin",
+                    email: "pa@weniv.com",
+                    active: true,
+                },
+            ];
+
+        console.log(user[0]['id']);
+
+        let a = 10;
+        let b = 20;
+        let c = 30;
+        let e = {a, b, c};
+        console.log(e);
+        // {a : 10, b : 20, c : 30}
+        e['a'] = 50;
+        console.log(e); // {a : 50, b : 20, c : 30}
+
+
+        let txt = "hello";
+        let txt2 = {
+            0: 'h',
+            1: 'e',
+            2: 'l',
+            3: 'l',
+            4: 'o',
+        };
+
+        console.log(txt[1]);
+        console.log(txt2[1]); // 유사 배열 객체, e
+
+        // console.log(txt2.1); // map
+        // console.log(txt2.{'one' : 1}) // map
+
+
+        let test = {
+            one: sum, // 호이스팅
+            two: console.log,
+            three: window.innerWidth,
+            four: [10, 20, 30],
+            five: '10',
+            six: 100,
+        }
+
+        console.log(test);
+
+        test.two("호준");
+
+        // key와 value만 뽑아낼 수 없을까?
+        console.log(Object.keys(newuser));
+        console.log(Object.values(newuser));
+        console.log(Object.entries(newuser));
+
+        // map에서 사용가능
+        // newuser.keys();
+        // newuser.values();
+        // newuser.entries();
+
+        // object spread 용법
+        // let newuser = {
+        //     id : 'hojun',
+        //     pw : '1234', // 사실 암호화해서 저장해야 함(MD5)
+        //     name : 'Semin',
+        //     email : 'ksm9802@gmail.com',
+        //     active : true,
+        // }
+
+        let 회원정보업데이트 = {
+            name : 'cat',
+            email : 'jun@naver.com',
+        }
+
+        // newuser['name'] = 회원정보업데이트['name'];
+        // newuser['email'] = 회원정보업데이트['email'];
+        // console.log(newuser);
+        console.log({...newuser});
+        newuser = {...newuser, ...회원정보업데이트};
+        console.log(newuser);
+
+        // 이렇게 바꾸면 2개 다 바뀐다
+        // let newuser2 = newuser; // newuser2가 newuser를 가리킴
+        // newuser2['id'] = 'helloworld';
+        // console.log(newuser2);
+        // console.log(newuser);
+        // 둘 다 아이디가 helloworldfh qkRna
+
+        // 완전히 다름, spread 기법을 사용하면 원본을 만지지 않고 사용 가능
+        let newuser2 = {...newuser};
+        newuser2['id'] = 'helloworld';
+        console.log(newuser);
+        console.log(newuser2);
+
+        // Object
+        function sum(x, y) {
+            return x + y;
+        }
+
+        console.log(sum); // function의 기능 전체 출력
+        console.log(typeof sum); // function
+
+        sum.value = 'hojun';
+        console.log(console.dir(sum));
+        sum.value;
+    </script>
+</body>
+</html>

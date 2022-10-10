@@ -1,0 +1,205 @@
+/* reset */
+body,
+h1,
+p {
+	margin: 0;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* font */
+@font-face {
+	font-family: "SpoqaHanSansNeo-Regular";
+	src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "SpoqaHanSansNeo-Bold";
+	src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Bold.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* rem 단위 기준 */
+html {
+	font-size: 10px;
+}
+
+body {
+	font-family: "SpoqaHanSansNeo-Regular";
+	font-size: 1.6rem;
+	color: #121314;
+}
+
+strong {
+	font-family: "SpoqaHanSansNeo-Bold";
+}
+
+.blind {
+	position: absolute;
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+}
+
+.wrap {
+	display: flex;
+	gap: 8%;
+	width: 120rem;
+	max-width: calc(100% - 6rem);
+	margin: 24rem auto;
+}
+
+.section-text h1 {
+	font-size: 7rem;
+	font-weight: normal;
+	word-break: keep-all;
+}
+
+.section-text p {
+	margin-top: 2rem;
+	font-size: 2rem;
+	color: #47494d;
+	line-height: 1.5;
+}
+
+.section-field {
+	flex-basis: 40.5%;
+	flex-shrink: 0;
+}
+
+.section-field ul {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.section-field ul li a {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 15.2rem;
+	width: 100%;
+	height: 100%;
+	padding: 4rem 3rem 3rem 4rem;
+	box-sizing: border-box;
+	border-radius: 2rem;
+	color: #fff;
+}
+
+.field-video a {
+	background: url(./img/background1.jpg) no-repeat 50% 50% / cover;
+}
+
+.field-book a {
+	background: url(./img/background2.jpg) no-repeat 50% 50% / cover;
+}
+
+.section-field .field-title {
+	display: block;
+	font-family: "SpoqaHanSansNeo-Bold";
+	font-size: 3rem;
+}
+
+.section-field .field-go {
+	display: block;
+	text-align: right;
+	padding-right: 1.3em;
+	background: url(./img/arrow.svg) no-repeat right 50% / 1.25em;
+	font-size: 1.6rem;
+}
+
+/* 태블릿 */
+@media (max-width: 768px) {
+	.wrap {
+		flex-direction: column;
+		gap: 6rem;
+		margin: 10rem auto;
+	}
+
+	/* 클래스 네이밍 컨벤션화, 정확 */
+	.section-text p {
+		margin-top: 2rem;
+		font-size: 1.8rem;
+	}
+
+	.section-field ul {
+		flex-direction: row;
+		gap: 2rem;
+	}
+
+	/* 플렉스 아이템은 기본적으로 컨텐츠 크기만큼만 영역 점유 */
+	.section-field ul li {
+		flex-basis: 50%;
+		/* width는 너비를 강제(너비 값보다 더 큰 컨텐츠가 들어오면 width의 경우 오버플로우) */
+		/* flex-basis는 주축에 따라 너비인지 높이인지가 달라짐 */
+	}
+
+	.section-field ul li a {
+		/* 패딩사이즈: em */
+		/* 해당 패딩이 속한 박스의 폰트 사이즈에 따라 패딩이 커지고자 할 때 */
+		padding: 3em 3em 2em 3em;
+		/* 패딩의 기준이 1rem: 30px 30px 20px 30px */
+		/* padding: 3rem 3rem 2rem 3rem; */
+		gap: 9.7rem;
+		font-size: 1rem;
+		/* font-size: 1.1rem; */
+		/* 이 폰트 사이즈만 바꿔도 패딩에 영향이 있고 자식에도 영향이 있음 */
+	}
+
+	.section-field .field-title {
+		/* font-size: 2.4rem; */
+		font-size: 2.4em;
+	}
+
+	.section-field .field-go {
+		font-size: 1.6rem;
+	}
+}
+
+/* 모바일 */
+@media (max-width: 500px) {
+	.wrap {
+		max-width: calc(100% - 3.2rem);
+		gap: 4rem;
+	}
+
+	.section-text h1 {
+		font-size: 3.6rem;
+	}
+
+	.section-text p {
+		margin-top: 1.4rem;
+		font-size: 1.4rem;
+	}
+
+	.section-field ul {
+		flex-direction: column;
+		gap: 1.4rem;
+	}
+
+	.section-field ul li a {
+		gap: 11.2rem;
+	}
+
+	.section-field .field-title {
+		font-size: 2em;
+	}
+
+	.section-field .field-go {
+		font-size: 1.4rem;
+		font-size: 1.4em;
+	}
+}

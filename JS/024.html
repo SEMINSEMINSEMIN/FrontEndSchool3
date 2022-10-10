@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-s8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <script>
+        let myObj = {
+            var1 : 10,
+            var2 : 30
+        };
+
+        // 배열의 리터럴(많이 씀)
+        let myarray = [];
+
+        // 생성자 함수
+        let myArray = new Array(5);
+        console.log(myArray); // 길이가 5인 어레이 반환
+
+        let myArray2 = new Array(5, 3, 2);
+        console.log(myArray2); // [5, 3, 2]
+
+        // 배열 값 접근
+        myArray2[0]; // 5
+        myArray2[0] = 100; // mutable
+
+        let val = "hello";
+        val[2] = 'z';
+        console.log(val);
+        // immutable(불변성)
+
+        // 생성과 동시에 값에 접근
+        console.log([1, 2, 3, 4][2]); // 3
+        
+        // 존재하지 않는 인덱스에 접근시
+        console.log([1,2,3,4][5]); // undefined
+
+        myArray2[5] = 10;
+        console.log(myArray2); // 중간에 값이 비어있는 배열도 만들 수 있음
+
+        // unshift()-맨 앞에 요소를 추가, 배열의 length 반환
+        // shift() - 맨 앞의 요소를 지울 때
+        let data = ['a', 'b', 'c', 'd'];
+        data.shift(); // 'a'
+        data; // ['b', 'c', 'd']
+        data.unshift('e'); // 4
+        data; // ['e', 'b', 'c', 'd']
+
+        // 맨 뒤의 요소 추가 - push()
+
+        // pop()
+
+        // splice(요소를 위치시키고자 하는 인덱스, 제거할 요소의 '개수', 배열에 추가할 요소), 반환되는건 제거되는 것들
+        // splice(-1, 0, 'scone')
+
+        // slice - 배열 일부분을 잘라내서 새로운 배열로 반환. 원본을 변경하는 메소드가 아니다
+
+        fish.slice(2, 3);
+        fish.slice(-1);
+
+        // reverse - 원본 배열 반전
+
+        //indexOf - 요소의 인덱스
+        // 두번째 인자: 찾기 시작할 값
+        const cafe = ['coffee', 'cake', 'tea', 'scone', 'tea', 'cookie'];
+        console.log(cafe.indexOf('tea')); // 2
+        // 배열을 왼쪽에서부터 탐색
+        // 처음에 존재하는 찾고자 하는 값 인덱스 반환
+
+        // join
+        // 요소들을 연결해 하나의 값으로 만듦
+        // split
+        // .join('/').split('/');
+        // 메소드 체이닝
+        // 문자열이 가지고 있는 메소드가 split
+        // 반환 값을 가지고 있는 거의 메소드 체이닝은 불가능함
+
+        // includes
+
+        // find
+        const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+        arr.find(function(i){
+            return i === 11;
+        })
+
+        // filter: 끝까지 다 봄
+
+        // map
+        arr.map(function(i){
+            return i.name;
+        })
+
+        var studentList = [
+            {
+                id: 1, name: '원범', score: 'great'
+            },
+            {
+                id: 2, name: '김진', score: 'nice'
+            },
+            {
+                id: 3, name: '혜원', score: 'good'
+            },
+            {
+                id: 4, name: '재현', score: 'too cool for school'
+            }
+        ]
+
+        const studentName = studentList.map(i=>i.name);
+
+        // filter는 걸러내는 거, map은 우리가 원하는 값을 뽑아내서 새로운 배열을 만들어내는거
+        // map에서 조건을 걸 바에 filter를 쓰는게 더 효율적
+        // filter는 조건 메소드가 자체적으로 있고 map은 따로 없다(함수자리에 조건문을 걸면 메소드처럼 쓸 수 있다) 처럼 이해하면 될까요?
+
+        // forEach-return 다음의 문장 실행
+        // map과의 차이: foreach는 단순히 '결과값' 반환
+        // map은 '배열' 반환
+        // forEach가 Map보다 일찍 나옴
+        // 벤딩머신
+        // 콜라 버튼 클릭시 어떠한 함수를 실행해라
+        // 배열에 콜라를 담음
+        // 원소 '각각'에 클릭 이벤트 달기
+
+        // concat
+
+        // sort: 기본적으로 오름차순으로
+        // sort시 원본 변경하고 싶지 않을 때
+        // sort 에러 없이 하는거 나중에 깃허브 자료에서 보기(여기 코드 없음)
+        let test = [13, 9, 10, 2];
+        [...test].sort()
+
+        let a = [1, 2, 3, 4];
+        let b = a;
+        b[0] = 1000;
+        a;
+
+        let a = [1, 2, 3, 4];
+        let b = [...a];
+        b[0] = 1000;
+        a;
+
+        const nums = [400, 200, 100];
+        nums.sort(); // 오름차순
+
+        const nums2 = [40, 200, 10000000];
+        nums2.sort(); // 내림차순?
+        // 문자로 취급해서 비교
+        // "40" "20" "10000000"
+        // 문자열의 시작(유니코드)
+        // 1로 시작하는게 제일 먼저 옴
+
+        // 숫자 정렬 방법
+        const arrNum = [13, 9, 10, 2];
+
+        arrNum.sort(function(a, b){
+            console.log(`a : ${a}`, `b : ${b}`);
+            return a - b;
+        });
+        // sort 함수에 인자로 비교 함수를 집어넣어야 함
+        // 9 - 13 < 0
+        // 음수일 때는 순서를 바꿔줌 배열의 위치는 [9 13 10 2]
+        // 버블 소팅: 근접한 데이터 서로 비교
+        // 10 - 9 > 0, 변하지 않음
+        // 10 - 13 < 0, [9, 10, 13, 2]
+        // 10 - 9 >0
+        // 2 - 10 <0, [9, 2, 10, 13]
+        // 2 - 9 < 0, [2, 9, 10, 13]
+
+        const arrNum2 = [13, 24, 3, 2];
+        arrNum2.sort(function(a,b){
+            if(a < b){
+                return -1;
+            } else if (b < a){return 1;} else{return 0;}
+        });
+
+        // 배열 요소에 객체가 있을 때 sort를 어떻게 사용해야할까?
+
+        const studentList3 = [
+            {id:1, product:'연필', stock:10},
+            {id:2, product:'노트', stock:100},
+            {id:3, product:'지우개', stock:5},
+            {id:4, product:'볼펜', stock:30}
+        ]
+
+        // stock 기준 정렬
+        // studentList3.sort(function(a,b){
+        //     if(a.stock < b.stock){
+        //         return -1;
+        //     } else if (b.stock < a.stock){return 1;} else{return 0;}
+        // });
+
+        const studentList =
+        [
+            { id: 1, product: '연필', stock: 10 },
+            { id: 2, product: '노트', stock: 100 },
+            { id: 3, product: '지우개', stock: 5 },
+            { id: 4, product: '볼펜', stock: 30 },
+        ]
+
+        studentList.sort(function (a, b) {
+            return a.stock - b.stock;
+        })
+
+        console.log(studentList);
+    </script>
+</body>
+</html>

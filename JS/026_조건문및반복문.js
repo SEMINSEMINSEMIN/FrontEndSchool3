@@ -111,11 +111,11 @@ switch ('two') {
     case 'one':
         console.log(1);
     case 'two':
-        console.log(1);
+        console.log(2);
     case 'three':
-        console.log(1);
+        console.log(3);
     case 'four':
-        console.log(1);
+        console.log(4);
 }
 // 2 3 4
 
